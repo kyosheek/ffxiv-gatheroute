@@ -1,12 +1,14 @@
-profession	name	gathering lv	region	location outside	location inside	quanity	coordinates	time interval (Eorzea)	npc	bait/lure	water type	note
+profession	name	gathering lv	region	location outside	location inside	quantity	coordinates	time interval (Eorzea)	npc	bait/lure	water type	note
 hunting	Wolf Fang	35-37, 46, 48	Coerthas	Coerthas Central Highlands	Dragonhead		"31, 18; 12, 31; 22, 29"		Natalan Watchwolf, Snow Wolf, Snow Wolf Pup			route: https://imgur.com/a/m8qXVOM
 mining	Jade	40	Coerthas	Coerthas Central Highlands	Dragonhead		24, 20					
+mining	Raw Zircon	40	Coerthas	Coerthas Central Highlands	Dragonhead		24, 20					
 logging	Mirror Apple	45	Coerthas	Coerthas Central Highlands	Whitebrim							
 hunting	Karakul Skin	35-39	Coerthas	Coerthas Central Highlands			21, 16		Ornery Caracul			
 hunting	Fleece	35	Coerthas	Coerthas Central Highlands			27, 20		Ornery Caracul			
 mining	Dragon Obsidian	50	Coerthas	Coerthas Western Highlands	Riversmeet							
 mining	Raw Garnet	35	La Noscea	Eastern La Noscea	Bloodshore							
 harvesting	Midland Basil	35	La Noscea	Eastern La Noscea	Bloodshore							
+harvesting	Mandrake	35	La Noscea	Eastern La Noscea	Bloodshore		27, 30					
 harvesting	Mugwort	40	La Noscea	Eastern La Noscea	Raincatcher Gully							
 logging	Almonds	40	La Noscea	Eastern La Noscea	Raincatcher Gully		19, 28					
 logging	Iron Acorn	40	La Noscea	Eastern La Noscea	Raincatcher Gully							
@@ -18,6 +20,7 @@ hunting	Jellyfish Umbrella	33	La Noscea	Eastern La Noscea			31, 26		Bloodshore B
 hunting	Buffalo Sirloin	31	La Noscea	Eastern La Noscea			27, 34		Buffalo family			
 hunting	Night Milk	31	La Noscea	Eastern La Noscea			27, 34		Buffalo family			
 hunting	Apkallu Egg	30	La Noscea	Eastern La Noscea			27, 36		Apkallu			
+hunting	Apkallu Down	30	La Noscea	Eastern La Noscea			27, 36		Apkallu			
 buying	Buffalo Milk	0	La Noscea	Limsa Lominsa	Lower Decks		9, 12		Engerrand			
 buying	Mineral Water	0	La Noscea	Limsa Lominsa	Lower Decks		9, 12		Engerrand			
 buying	Sour Red	0	La Noscea	Limsa Lominsa	Lower Decks		9, 12		Engerrand			
@@ -26,6 +29,7 @@ fishing	Coral Butterfly		La Noscea	Limsa Lominsa	Lower Decks		7, 12
 buying	Marbled Eye		La Noscea	Limsa Lominsa	Lower Decks		9, 12		Engerrand			
 logging	Cock Feather	10	La Noscea	Limsa Lominsa	Spineless Basin		9, 12		Engerrand			
 buying	Tiny Crown	0	La Noscea	Limsa Lominsa	Upper Decks		10, 8		Jossy			
+buying	Pudding Flesh		La Noscea	Limsa Lominsa	Upper Decks		13, 13		Storm Quartermaster			200 seals
 quarrying	Earth Crystal	30	La Noscea	Lower La Noscea	Cedarwood							
 logging	Sun Lemon	20	La Noscea	Lower La Noscea	Cedarwood							
 harvesting	Cinderfoot Olive	15	La Noscea	Lower La Noscea	Moraby Bay							
@@ -44,7 +48,7 @@ hunting	Ram Horn	3-4	La Noscea	Middle La Noscea			22, 26		Lost Lamb
 hunting	Raptor Sinew	34	La Noscea	Outer La Noscea			20, 16		Velociraptor			
 hunting	Raptor Skin	34	La Noscea	Outer La Noscea			20, 16		Velociraptor			
 hunting	Raptor Shank	34	La Noscea	Outer La Noscea			20, 16		Velociraptor			
-harvesting	Black Scorpion	45	La Noscea	Upper La Noscea	Bronze Lake							
+harvesting	Black Scorpion	45	La Noscea	Upper La Noscea	Bronze Lake		35, 25					
 harvesting	Dart Frog	45	La Noscea	Upper La Noscea	Bronze Lake							
 mining	Electrum Ore	45	La Noscea	Upper La Noscea	Bronze Lake		30, 25					
 mining	Raw Turquoise	45	La Noscea	Upper La Noscea	Bronze Lake							
@@ -52,6 +56,7 @@ quarrying	Siltstone	30	La Noscea	Upper La Noscea	Oakwood
 quarrying	Lightning Rock	25	La Noscea	Upper La Noscea	Oakwood							
 harvesting	Pixie Plums	25	La Noscea	Upper La Noscea	Oakwood							
 harvesting	Chamomile	25	La Noscea	Upper La Noscea	Oakwood							
+quarrying	Fire Rock	25	La Noscea	Upper La Noscea	Oakwood		13, 23					
 buying	Warped Bow	47	La Noscea	Upper La Noscea			15, 24		Junkmonger			
 buying	Rotting Round Shield	43	La Noscea	Upper La Noscea			15, 24		Junkmonger			
 buying	Crooked Guisarme	42	La Noscea	Upper La Noscea			15, 24		Junkmonger			
@@ -62,7 +67,8 @@ hunting	Animal Hide	14	La Noscea	Western La Noscea	Quarterstone		33, 28		Wild Do
 hunting	Dodo Tenderlion	14	La Noscea	Western La Noscea	Quarterstone		33, 28		Wild Dodo			
 mining	Sunrise Tellin	20	La Noscea	Western La Noscea	Skull Valley							
 quarrying	Mudstone	20	La Noscea	Western La Noscea	Skull Valley							
-fishing	Red Coral		La Noscea	Western La Noscea	The Ship Graveyard					Saltwater Boilie		
+fishing	Red Coral		La Noscea	Western La Noscea	The Ship Graveyard		15, 35			Saltwater Boilie		
+fishing	Blacklip Oyster		La Noscea	Western La Noscea	The Ship Graveyard		15, 35					
 hunting	Hippogryph Skin	46	Mor Dhona	Mor Dhona			27, 8		Hippogryph			
 hunting	Hippogryph Sinew	46	Mor Dhona	Mor Dhona			27, 8		Hippogryph			
 hunting	Eft Tail	45	Mor Dhona	Mor Dhona			12, 11		Mudpuppy family			
@@ -73,7 +79,7 @@ mining	Bone Chip	5	Thanalan	Central Thanalan	Spineless Basin
 mining	Wind Shard	5	Thanalan	Central Thanalan	Spineless Basin							
 mining	Lightning Shard	5	Thanalan	Central Thanalan	Spineless Basin							
 harvesting	Black Pepper	15	Thanalan	Central Thanalan	The Clutch							
-mining	Raw Amber	45	Thanalan	Eastern Thanalan	Drybone							
+mining	Raw Amber	45	Thanalan	Eastern Thanalan	Drybone		13, 19					
 mining	Alumen	20	Thanalan	Eastern Thanalan	Drybone		18, 20					
 mining	Raw Malachite	20	Thanalan	Eastern Thanalan	Drybone		18, 20					
 harvesting	Popoto	20	Thanalan	Eastern Thanalan	Sandgate							
@@ -84,12 +90,15 @@ hunting	Aldgoat Horn	16	Thanalan	Eastern Thanalan			17, 22		Myotragus family
 hunting	Aldgoat Skin	16	Thanalan	Eastern Thanalan			17, 22		Myotragus Billy			
 mining	Basilisk Egg	50	Thanalan	Northern Thanalan	Bluefog							
 mining	Cobalt Ore	50	Thanalan	Northern Thanalan	Bluefog		23, 24					
+quarrying	Grenade Ash	40	Thanalan	Northern Thanalan	Bluefog		22, 28					
 hunting	Basilisk Egg	49	Thanalan	Northern Thanalan			21, 25		Basilisk			
 hunting	Peiste Skin	49	Thanalan	Northern Thanalan			21, 25		Basilisk			
+hunting	Ahriman Wing	49	Thanalan	Northern Thanalan			24, 21		Ahriman			
 harvesting	Laurel	35	Thanalan	Southern Thanalan	Broken Water							
 harvesting	Desert Saffron	35	Thanalan	Southern Thanalan	Broken Water							
 mining	Mythril Ore	35	Thanalan	Southern Thanalan	Sagolii Desert		25, 40					
 quarrying	Bomb Ash	30	Thanalan	Southern Thanalan	Sagolii Desert		22, 30					
+hunting	Sandworm Fang	31-32	Thanalan	Southern Thanalan			13, 34		Sandworm			
 hunting	Cactuar Needle	25-27	Thanalan	Southern Thanalan			13, 14		Sabotender			
 fishing	Whitelip Oyster	45	Thanalan	Western Thanalan	Cape Westwind		9, 6			Herring Ball		
 mining	Tin Ore	10	Thanalan	Western Thanalan	Hammerlea		22, 29					
@@ -100,6 +109,7 @@ mining	Zink Ore	10	Thanalan	Western Thanalan	Hammerlea
 mining	Copper Ore	5	Thanalan	Western Thanalan	Hammerlea		27, 26					
 mining	Fire Shard	5	Thanalan	Western Thanalan	Hammerlea							
 mining	Water Shard	5	Thanalan	Western Thanalan	Hammerlea							
+mining	Muddy Water	5	Thanalan	Western Thanalan	Hammerlea		27, 26					
 harvesting	Moko Grass	15	Thanalan	Western Thanalan	Horizon’s Edge							
 harvesting	Rye	15	Thanalan	Western Thanalan	Horizon’s Edge							
 mining	Iron Ore	15	Thanalan	Western Thanalan	Horizon’s Edge		27, 17					
@@ -130,7 +140,7 @@ logging	Faerie Apple	20	The Black Shroud	East Shroud	Nine Ivies
 logging	Yew Branch	20	The Black Shroud	East Shroud	Nine Ivies		15, 27					
 logging	Yew Log	20	The Black Shroud	East Shroud	Nine Ivies		15, 27					
 hunting	Ochu Vine	48	The Black Shroud	East Shroud	Sylphlands		23, 18		Milkroot Claster			
-logging	Rosewood Branch	50	The Black Shroud	East Shroud	The Bramble Patch							
+logging	Rosewood Branch	50	The Black Shroud	East Shroud	The Bramble Patch		16, 23					
 logging	Rosewood Log	50	The Black Shroud	East Shroud	The Bramble Patch		16, 23					
 hunting	Scalekin Blood		The Black Shroud	East Shroud			16, 20		Jumping Djigga			
 hunting	Acidic Secretions	25-28	The Black Shroud	North Shroud	Alder Springs		21, 30		Shroud Hare			
@@ -150,15 +160,18 @@ harvesting	Flax	35	The Black Shroud	South Shroud	Lower Paths		17, 30
 harvesting	Wildfowl Feather	35	The Black Shroud	South Shroud	Lower Paths							
 logging	Oak Branch	35	The Black Shroud	South Shroud	Lower Paths							
 logging	Oak Log	35	The Black Shroud	South Shroud	Lower Paths		17, 30					
+logging	Chocobo Feather	30	The Black Shroud	South Shroud	Silent Arbor		26, 19					
 logging	Walnut Log	25	The Black Shroud	South Shroud	Upper Paths							
-mining	Effervescent Water	25	The Black Shroud	South Shroud	Upper Paths		16, 19					
-mining	Silver Ore	25	The Black Shroud	South Shroud	Upper Paths		16, 19					
+mining	Effervescent Water	25	The Black Shroud	South Shroud	Upper Paths		16, 20					
+mining	Silver Ore	25	The Black Shroud	South Shroud	Upper Paths		16, 20					
 quarrying	Silver Sand	25	The Black Shroud	South Shroud	Upper Paths							
+logging	Matron’s Mistletoe	25	The Black Shroud	South Shroud	Upper Paths		23, 22					
 hunting	Boar Hide	45-46	The Black Shroud	South Shroud	Urth’s Gift		29, 24		Wild Hog			
 mining	Black Alumen	40	The Black Shroud	South Shroud	Urth’s Gift		29, 22					
-mining	Raw Spinel	40	The Black Shroud	South Shroud	Urth’s Gift							
+mining	Raw Spinel	40	The Black Shroud	South Shroud	Urth’s Gift		29, 22					
 hunting	Antelope Horn	25-28	The Black Shroud	South Shroud			21, 20		Antelope Stag			
 hunting	Beast Sinew	25-28	The Black Shroud	South Shroud			21, 20		Antelope Stag			
 hunting	Blue Landtrap Leaf	21-24	The Black Shroud	South Shroud			16, 20		Kedtrap			
+hunting	Blue Yarzon Leg	25	The Black Shroud	South Shroud			22, 23		River Yarzon			
 fishing	Loyal Pleco			freshwater							freshwater	
 fishing	Fall Jumper			waterfall?							waterfall?	

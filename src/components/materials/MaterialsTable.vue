@@ -34,7 +34,8 @@
                 .then(data =>
                 {
                     this.rows = [...data];
-                    this.columns = data.columns;
+                    // this.columns = data.columns;
+                    this.columns = [ 'name', 'quantity' ];
                 })
                 .catch(err =>
                 {

@@ -82,4 +82,9 @@ table {
     {
         padding: 0.5rem 2rem;
     }
+
+    & th
+    {
+        vertical-align: top;
+    }
 }
