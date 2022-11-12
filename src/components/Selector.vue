@@ -1,6 +1,6 @@
 <script>
     export default {
-        name: 'Table',
+        name: 'Selector',
         props: {
 
             materials: {
@@ -64,40 +64,40 @@
     <article>
         <h2>Materials</h2>
         <section>
-            <label>
-                Choose an item:
-                <select autocomplete="on"
-                        v-model="currentItem">
-                    <template v-if="hasRows">
-                        <option :value="null"
-                                disabled>---</option>
-                        <template v-for="row in filteredRows"
-                                  :key="row.name" >
-                            <option :value="row.name">{{ row.name }}</option>
-                        </template>
+            <select autocomplete="on"
+                    v-model="currentItem">
+                <template v-if="hasRows">
+                    <option :value="null"
+                            disabled>Choose an item</option>
+                    <template v-for="row in filteredRows"
+                              :key="row.name" >
+                        <option :value="row.name">{{ row.name }}</option>
                     </template>
-                </select>
-            </label>
+                </template>
+            </select>
             <template v-if="currentItem">
                 <br/>
-                <label>
-                    Input quantity:
-                    <input v-model="toGather[currentItem]"
-                           type="number"
-                           step="1"
-                           min="1"
-                           placeholder="0"
-                           @keypress="(evt) => filterInput(evt)"
-                           @input="(evt) => handleInputChange(evt, currentItem)" />
-                </label>
+                <p>
+                    <label>
+                        Quantity:
+                        <input v-model="toGather[currentItem]"
+                               type="number"
+                               step="1"
+                               min="1"
+                               placeholder="0"
+                               @keypress="(evt) => filterInput(evt)"
+                               @input="(evt) => handleInputChange(evt, currentItem)" />
+                    </label>
+                </p>
             </template>
         </section>
         <template v-if="Object.keys(toGather).length > 0">
-            <section>
+            <section class="selector-items">
                 <template v-for="(quantity, name) in toGather">
-                    <p>
-                        <b>{{ name }}</b> [ <i>{{ quantity }}</i> ] <button @click="() => removeItemFromGatherList(name)">x</button>
-                    </p>
+                    <div class="item">
+                        <div><b>{{ name }}</b><br/><i>{{ quantity }}</i></div>
+                        <button @click="() => removeItemFromGatherList(name)">x</button>
+                    </div>
                 </template>
             </section>
         </template>

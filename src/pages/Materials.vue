@@ -3,8 +3,8 @@ import { ref } from "vue";
 
 import { tsvParse } from "d3-dsv";
 
-import Table from "../components/Table.vue";
 import Router from "../components/Router.vue";
+import Selector from "../components/Selector.vue";
 
 let materials = ref([]);
 const toGather = ref({});
@@ -44,8 +44,10 @@ fetch('assets/data/materials.tsv')
         <section class="materials-wrap"
                  :class="{ 'is-loading': isLoading }">
 
-            <Table :materials="materials"
-                   :to-gather="toGather" />
+            <Selector :materials="materials"
+                      :to-gather="toGather" />
+
+            <div class="materials-delimiter"></div>
 
             <Router :materials="materials"
                     :to-gather="toGather" />

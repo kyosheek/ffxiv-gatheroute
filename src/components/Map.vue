@@ -45,7 +45,8 @@ export default {
             rect: null,
             ctx: null,
             mapImage: null,
-            images: {}
+            images: {},
+            isLoading: true,
         };
     },
     watch: {
@@ -77,6 +78,8 @@ export default {
 
         draw()
         {
+            this.isLoading = true;
+
             this.loadMap()
                 .then(() => {
 
@@ -156,7 +159,8 @@ export default {
                             ctx.fillText(idx + 1, x, y + 6);
                         }
                     });
-                });
+                })
+                .finally(() => this.isLoading = false);
         },
         loadMap()
         {
@@ -203,6 +207,7 @@ export default {
 
 <template>
     <canvas id="map"
+            :class="{ 'is-loading': isLoading }"
             :style="{
                     width: dimensions.width + 'px',
                     height: dimensions.height + 'px'

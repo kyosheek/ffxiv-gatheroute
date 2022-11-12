@@ -114,20 +114,22 @@ export default {
         <button @click="$emit('setNextLoc')"
                 :disabled="!canSetNextLoc">Next &gt;</button>
     </section>
-    <section>
-        <p><b>{{ region }}</b>, {{ location }}</p>
-        <template v-for="(item, idx) in items">
-            <article style="background-color: aliceblue; border-radius: 8px; border: 1px solid wheat; width: max-content; padding: 5px 10px;">
-                <p>
-                    <b><i>Step {{ idx + 1 }}</i></b>
-                    <br/>
-                    {{ item.action }}
-                    <template v-if="item.note && item.note.length > 0">
-                        <i>{{ item.note }}</i>
-                    </template>
-                </p>
-            </article>
-        </template>
+    <section v-if="region != null && location != null">
+        <h3 class="stepper__location">{{ region }}, <b>{{ location }}</b></h3>
+        <section class="stepper__items">
+            <template v-for="(item, idx) in items">
+                <article class="item">
+                    <p>
+                        <b><i>Step {{ idx + 1 }}</i></b>
+                        <br/>
+                        {{ item.action }}
+                        <template v-if="item.note && item.note.length > 0">
+                            <i>{{ item.note }}</i>
+                        </template>
+                    </p>
+                </article>
+            </template>
+        </section>
     </section>
 </template>
 
