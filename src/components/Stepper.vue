@@ -70,9 +70,34 @@ export default {
                         action = `[Any] Buy ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
                         break;
                 }
+
                 if (item.profession !== 'buying' && item.profession !== 'fishing')
                 {
                     action += ` ${item.quantity} ${item.name} at (${item.x}, ${item.y})`;
+                    const time = item['time'];
+                    if (time.length > 0)
+                    {
+                        action += ` at ${time} (Eorzea time)`;
+                    }
+                }
+
+                if (item.profession === 'fishing')
+                {
+                    const weather = item.weather,
+                        time = item.time,
+                        special = item.special;
+                    if (weather.length > 0)
+                    {
+                        action += ` in ${weather} weather`;
+                    }
+                    if (time.length > 0)
+                    {
+                        action += ` at ${time} (Eorzea time)`;
+                    }
+                    if (special.length > 0)
+                    {
+                        action += ` (with ${special} condition)`
+                    }
                 }
                 item.action = action;
                 return item;
