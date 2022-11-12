@@ -218,6 +218,65 @@ button
     background-color: var(--c-3);
 }
 
+footer
+{
+    padding: 3rem 1.5rem;
+    background-color: black;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & a, & a:visited
+    {
+        color: var(--c-8);
+    }
+}
+
+nav ul li, .ul--inline li
+{
+    display: inline-block;
+}
+
+nav ul li
+{
+    &:not(:last-child)
+    {
+        &::after
+        {
+            position: relative;
+            margin-left: 0.5em;
+            content: "/>";
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}
+
+.ul--inline li
+{
+    &:not(:last-child)
+    {
+        &::after
+        {
+            position: relative;
+            margin-left: 0.5em;
+            content: "x";
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 #map
 {
     padding: 20px;
