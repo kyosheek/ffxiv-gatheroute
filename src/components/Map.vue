@@ -46,7 +46,7 @@ export default {
             ctx: null,
             mapImage: null,
             images: {},
-            isLoading: true,
+            isLoading: false,
         };
     },
     watch: {
