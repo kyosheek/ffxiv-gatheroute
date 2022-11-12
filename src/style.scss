@@ -126,6 +126,11 @@ select
 
     cursor: pointer;
 
+    & > option
+    {
+        color: black;
+    }
+
     &:focus
     {
         outline: none;
