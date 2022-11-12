@@ -49,22 +49,22 @@ export default {
                 switch(item.profession)
                 {
                     case 'hunting':
-                        action = `[DoW/DoM] Kill ${item.npc} for`;
+                        action = `[DoW/DoM] Kill lv${item.lv} ${item.npc} for`;
                         break;
                     case 'mining':
-                        action = `[Miner] Mine lv${item['gathering lv']} nodes for`;
+                        action = `[Miner] Mine lv${item.lv} nodes for`;
                         break;
                     case 'quarrying':
-                        action = `[Miner] Quarry lv${item['gathering lv']} nodes for`;
+                        action = `[Miner] Quarry lv${item.lv} nodes for`;
                         break;
                     case 'logging':
-                        action = `[Botanist] Log lv${item['gathering lv']} nodes for`;
+                        action = `[Botanist] Log lv${item.lv} nodes for`;
                         break;
                     case 'harvesting':
-                        action = `[Botanist] Harvest lv${item['gathering lv']} nodes for`;
+                        action = `[Botanist] Harvest lv${item.lv} nodes for`;
                         break;
                     case 'fishing':
-                        action = `[Fisher] Fish for lv${item['gathering lv']} ${item.name} fish at (${item.x}, ${item.y}) with ${item.bait} bait`;
+                        action = `[Fisher] Fish for lv${item.lv} ${item.name} fish at (${item.x}, ${item.y}) with ${item.bait} bait`;
                         break;
                     case 'buying':
                         action = `[Any] Buy ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
@@ -74,7 +74,7 @@ export default {
                 if (item.profession !== 'buying' && item.profession !== 'fishing')
                 {
                     action += ` ${item.quantity} ${item.name} at (${item.x}, ${item.y})`;
-                    const time = item['time'];
+                    const time = item.time;
                     if (time.length > 0)
                     {
                         action += ` at ${time} (Eorzea time)`;
