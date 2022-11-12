@@ -23,9 +23,31 @@
     -webkit-text-size-adjust: 100%;
 }
 
-//* {
-//    font-weight: 600;
-//}
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app
+{
+    padding: 10px;
+}
+
+header
+{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 0 1rem;
+}
 
 .is-loading
 {
@@ -220,6 +242,9 @@ button
 
 footer
 {
+    width: 100%;
+    margin-top: auto;
+
     padding: 3rem 1.5rem;
     background-color: black;
 
