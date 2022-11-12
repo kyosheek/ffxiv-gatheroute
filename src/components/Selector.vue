@@ -68,7 +68,7 @@
                     v-model="currentItem">
                 <template v-if="hasRows">
                     <option :value="null"
-                            disabled>Choose an item</option>
+                            disabled>Choose an Item</option>
                     <template v-for="row in filteredRows"
                               :key="row.name" >
                         <option :value="row.name">{{ row.name }}</option>

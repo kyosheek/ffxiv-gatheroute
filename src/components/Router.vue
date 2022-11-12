@@ -243,7 +243,7 @@ export default {
         <section>
             <button :disabled="!hasItemsToGather"
                     @click="initRouting">
-                Get route
+                Get Route
             </button>
 
             <section>

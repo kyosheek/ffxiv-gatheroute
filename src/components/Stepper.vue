@@ -110,9 +110,9 @@ export default {
 <template>
     <section>
         <button @click="$emit('setPrevLoc')"
-                :disabled="!canSetPrevLoc">&lt; Previous</button>
+                :disabled="!canSetPrevLoc">&lt; Previous Step</button>
         <button @click="$emit('setNextLoc')"
-                :disabled="!canSetNextLoc">Next &gt;</button>
+                :disabled="!canSetNextLoc">Next Step &gt;</button>
     </section>
     <section v-if="region != null && location != null">
         <h3 class="stepper__location">{{ region }}, <b>{{ location }}</b></h3>
