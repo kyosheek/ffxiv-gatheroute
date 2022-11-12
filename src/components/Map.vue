@@ -206,14 +206,15 @@ export default {
 </script>
 
 <template>
-    <canvas id="map"
-            :class="{ 'is-loading': isLoading }"
-            :style="{
-                    width: dimensions.width + 'px',
-                    height: dimensions.height + 'px'
-                 }"
-            :width="dimensions.width" :height="dimensions.height"
-            ref="map"></canvas>
+    <section :class="{ 'is-loading': isLoading }">
+        <canvas id="map"
+                :style="{
+                        width: dimensions.width + 'px',
+                        height: dimensions.height + 'px'
+                     }"
+                :width="dimensions.width" :height="dimensions.height"
+                ref="map"></canvas>
+    </section>
 </template>
 
 <style lang="scss"></style>
