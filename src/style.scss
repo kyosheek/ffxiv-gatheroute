@@ -231,6 +231,11 @@ hr
 
         width: max-content;
         background-color: var(--c-8);
+
+        @media screen and (max-width: 768px)
+        {
+            width: 100%;
+        }
     }
 
     &__items
