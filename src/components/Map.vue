@@ -46,7 +46,7 @@ export default {
             ctx: null,
             mapImage: null,
             images: {},
-            isLoading: false,
+            isDrawing: false,
         };
     },
     watch: {
@@ -78,7 +78,9 @@ export default {
 
         draw()
         {
-            this.isLoading = true;
+            if (this.isDrawing) return;
+
+            this.isDrawing = true;
 
             this.loadMap()
                 .then(() => {
@@ -160,7 +162,7 @@ export default {
                         }
                     });
                 })
-                .finally(() => this.isLoading = false);
+                .finally(() => this.isDrawing = false);
         },
         loadMap()
         {
@@ -206,7 +208,7 @@ export default {
 </script>
 
 <template>
-    <section :class="{ 'is-loading': isLoading }">
+    <section :class="{ 'is-loading': isDrawing }">
         <canvas id="map"
                 :style="{
                         width: dimensions.width + 'px',
