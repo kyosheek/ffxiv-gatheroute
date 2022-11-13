@@ -107,7 +107,7 @@ input
     border-radius: 5px;
     background-color: var(--c-2);
     border: unset;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25) inset;
 
     &:focus
     {
@@ -180,7 +180,8 @@ hr
         grid-template-columns: 100%;
         grid-row-gap: 5px;
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 800px)
+        {
             display: flex;
             align-items: center;
             flex-direction: row;
@@ -215,6 +216,11 @@ hr
         display: grid;
         grid-template-columns: max-content;
         grid-row-gap: 5px;
+
+        @media screen and (max-width: 800px)
+        {
+            grid-template-columns: 100%;
+        }
     }
 }
 
@@ -316,5 +322,5 @@ ul
 
 #map
 {
-    padding: 20px;
+    margin-top: 1rem;
 }
