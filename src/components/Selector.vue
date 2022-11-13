@@ -26,15 +26,13 @@
 
                 columns: [ 'name', 'quantity' ],
                 err: null,
-                filterValue: '',
-                currentItem: null,
+                currentItem: '',
             };
         },
         computed: {
 
-            hasColumns() { return this.columns.length > 0; },
             hasRows() { return this.materials.length > 0; },
-            filteredRows() { return this.materials.filter(row => row.name.toLowerCase().includes(this.filterValue.toLowerCase())); }
+            currentItemInList() { return this.materials.filter(row => row.name.toLowerCase() === this.currentItem.toLowerCase()).length === 1 }
         },
         methods: {
 
@@ -55,7 +53,7 @@
             removeItemFromGatherList(name)
             {
                 delete this.toGather[name];
-            }
+            },
         },
     }
 </script>
@@ -64,19 +62,22 @@
     <article>
         <h2>Materials</h2>
         <section>
-            <select autocomplete="on"
-                    v-model="currentItem">
+            <input list="materials"
+                   name="materials"
+                   id="materials-input"
+                   placeholder="Select Items"
+                   v-model="currentItem" />
+
+            <datalist id="materials">
                 <template v-if="hasRows">
-                    <option :value="null"
-                            disabled>Choose an Item</option>
-                    <template v-for="row in filteredRows"
-                              :key="row.name" >
-                        <option :value="row.name">{{ row.name }}</option>
+                    <template v-for="item in materials"
+                              :key="item.name" >
+                        <option>{{ item.name }}</option>
                     </template>
                 </template>
-            </select>
-            <template v-if="currentItem">
-                <br/>
+            </datalist>
+
+            <template v-if="currentItemInList">
                 <p>
                     <label>
                         Quantity:
@@ -92,13 +93,16 @@
             </template>
         </section>
         <template v-if="Object.keys(toGather).length > 0">
-            <section class="selector-items">
-                <template v-for="(quantity, name) in toGather">
-                    <div class="item">
-                        <div><b>{{ name }}</b><br/><i>{{ quantity }}</i></div>
-                        <button @click="() => removeItemFromGatherList(name)">x</button>
-                    </div>
-                </template>
+            <hr/>
+            <section>
+                <ul class="selector-items">
+                    <template v-for="(quantity, name) in toGather">
+                        <li class="item">
+                            <div><b>{{ name }}</b><br/><i>{{ quantity }}</i></div>
+                            <button @click="() => removeItemFromGatherList(name)">x</button>
+                        </li>
+                    </template>
+                </ul>
             </section>
         </template>
     </article>
