@@ -229,13 +229,13 @@ hr
     {
         padding: 5px 10px;
 
-        width: max-content;
-        background-color: var(--c-8);
-
         @media screen and (max-width: 768px)
         {
-            width: 100%;
+            max-width: 100%;
         }
+
+        width: max-content;
+        background-color: var(--c-8);
     }
 
     &__items
