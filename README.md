@@ -1,7 +1,15 @@
-# Vue 3 + Vite
+# FFXIV Gatheroute
+This is a repository with a source code of FFXIV Gatheroute application.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+App is available at https://ffxiv-gatheroute.xyz/
 
-## Recommended IDE Setup
+## Socials
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+For support, bugs, discussions and contributions visit [FFXIV Gatheroute Data](https://github.com/kyosheek/ffxiv-gatheroute-data) repository or reach me out on DIscord @`kyoshee#0011`.
+
+## Stack
+
+For development I am using Vue 3 + Vite setup. The app is currently hosted at https://vercel.com/ with a free plan.
+
+## License
+MIT
