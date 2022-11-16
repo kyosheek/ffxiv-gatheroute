@@ -19,7 +19,7 @@ logging	Almonds	40	La Noscea	Eastern La Noscea		19, 28
 logging	Iron Acorn	40	La Noscea	Eastern La Noscea		19, 26						
 logging	Mahogany Log	40	La Noscea	Eastern La Noscea		19, 26						
 logging	Nutmeg	40	La Noscea	Eastern La Noscea		19, 26						
-mining	Raw Garnet	35	La Noscea	Eastern La Noscea		29, 27						
+mining	Raw Garnet	35	La Noscea	Eastern La Noscea		29, 27
 buying	Buffalo Milk	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
 buying	Mineral Water	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
 buying	Sour Red	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
@@ -172,4 +172,5 @@ mining	Effervescent Water	25	The Black Shroud	South Shroud		16, 20
 mining	Silver Ore	25	The Black Shroud	South Shroud		16, 20						
 mining	Black Alumen	40	The Black Shroud	South Shroud		29, 22						
 mining	Raw Spinel	40	The Black Shroud	South Shroud		29, 22						
-quarrying	Silver Sand	25	The Black Shroud	South Shroud		23, 22						
+quarrying	Silver Sand	25	The Black Shroud	South Shroud		23, 22
+mining	Raw Goshenite	35	La Noscea	Eastern La Noscea		29, 27
