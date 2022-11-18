@@ -92,9 +92,8 @@ export default {
             this.isDrawing = true;
 
             this.loadMap()
-                .then(() => {
-                    this.drawMap();
-                })
+                .then(() => this.drawMap())
+                .catch(err => console.error(err))
                 .finally(() => this.isDrawing = false);
         },
         drawMap()
@@ -194,7 +193,16 @@ export default {
                 };
 
                 fetch(`/assets/images/maps/${imageLocation}.png`, { headers: fetchHeaders })
-                    .then(response => response.blob())
+                    .then(response => {
+                        if (response.ok)
+                        {
+                            response.blob()
+                        }
+                        else
+                        {
+                            throw new Error('Can\'t fetch image');
+                        }
+                    })
                     .then((imageBlob) => {
 
                         const image = new Image();
@@ -208,6 +216,11 @@ export default {
                             return resolve();
                         };
                     })
+                    .catch(err => {
+
+                        console.error(err);
+                        this.isDrawing = false;
+                    });
             });
         },
         resizeMap()

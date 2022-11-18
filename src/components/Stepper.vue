@@ -32,7 +32,9 @@ export default {
     },
     data()
     {
-        return {};
+        return {
+            err: null,
+        };
     },
     computed: {
 
@@ -69,9 +71,23 @@ export default {
                     case 'buying':
                         action = `[Any] Buy ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
                         break;
+                    case 'duty':
+                        switch (item.region)
+                        {
+                            case 'Dungeon':
+                                action = `Run ${item.location} for ${item.quantity} ${item.name}`;
+                                break;
+                            default:
+                                action = 'No switch case for region / Please report a bug';
+                                break;
+                        }
+                        break;
+                    default:
+                        action = 'No switch case for profession / Please report a bug';
+                        break;
                 }
 
-                if (item.profession !== 'buying' && item.profession !== 'fishing')
+                if (item.profession !== 'buying' && item.profession !== 'fishing' && item.profession !== 'duty')
                 {
                     action += ` ${item.quantity} ${item.name} at (${item.x}, ${item.y})`;
                     const time = item.time;
