@@ -1,9 +1,6 @@
 <script setup>
 import { ref, defineProps, watch, computed, onMounted } from "vue";
 
-const map = ref(null);
-const mapContainer = ref(null);
-
 const props = defineProps({
 
     route: {
@@ -22,6 +19,9 @@ const props = defineProps({
         default: null
     }
 });
+
+const map = ref(null);
+const mapContainer = ref(null);
 
 const dimensions = ref({
 
@@ -203,7 +203,7 @@ const resizeMap = () => {
 
     let isCurrentWidthOffscreen = (rect.x + parseFloat(map.value.getAttribute('width'))) > window.innerWidth;
 
-    let sideLength = 0;
+    let sideLength;
     if (isCurrentWidthOffscreen)
     {
         sideLength = Math.min(window.innerWidth - rect.x - 10, rect.height);
