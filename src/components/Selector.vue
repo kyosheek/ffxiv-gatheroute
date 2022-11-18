@@ -1,61 +1,45 @@
-<script>
-    export default {
-        name: 'Selector',
-        props: {
+<script setup>
+import { ref, defineProps, computed } from "vue";
 
-            materials: {
+const props = defineProps({
 
-                type: Array,
-                default()
-                {
-                    return [];
-                }
-            },
-            toGather: {
+    materials: {
 
-                type: Object,
-                default()
-                {
-                    return {};
-                }
-            }
-        },
-        data()
-        {
-            return {
+        type: Array,
+        default() { return []; }
+    },
+    toGather: {
 
-                columns: [ 'name', 'quantity' ],
-                err: null,
-                currentItem: '',
-            };
-        },
-        computed: {
-
-            hasRows() { return this.materials.length > 0; },
-            currentItemInList() { return this.materials.filter(row => row.name.toLowerCase() === this.currentItem.toLowerCase()).length === 1 }
-        },
-        methods: {
-
-            filterInput(evt)
-            {
-                if ([ '-', '+', '.', ',', 'e', 'E' ].includes(evt.key))
-                {
-                    evt.preventDefault();
-                }
-            },
-            handleInputChange(evt, name)
-            {
-                if (this.toGather[name] === '' || this.toGather[name] == null)
-                {
-                    delete this.toGather[name];
-                }
-            },
-            removeItemFromGatherList(name)
-            {
-                delete this.toGather[name];
-            },
-        },
+        type: Object,
+        default() { return {}; }
     }
+});
+
+const currentItem = ref('');
+
+const hasRows = computed(() => props.materials.length > 0);
+const currentItemInList = computed(() => {
+
+    return props.materials.filter(row => row.name.toLowerCase() === currentItem.value.toLowerCase()).length === 1;
+});
+
+const filterInput = (evt) => {
+
+    if ([ '-', '+', '.', ',', 'e', 'E' ].includes(evt.key))
+    {
+        evt.preventDefault();
+    }
+};
+
+const handleInputChange = (evt, name) => {
+
+    if (props.toGather[name] === '' || props.toGather[name] == null)
+    {
+        delete props.toGather[name];
+    }
+};
+
+const removeItemFromGatherList = (name) => delete props.toGather[name];
 </script>
 
 <template>
