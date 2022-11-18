@@ -1,106 +1,223 @@
 profession	name	lv	region	location	quantity	coordinates	time	npc	bait	weather	special	note
+fishing	Northern Pike	45	Coerthas	Coerthas Central Highlands		6, 22			freshwater			
+fishing	Cloud Cutter	48	Coerthas	Coerthas Central Highlands		13, 15			skyfishing			
 hunting	Fleece	35	Coerthas	Coerthas Central Highlands		27, 20		Ornery Caracul				
 hunting	Wolf Fang	35-37, 46, 48	Coerthas	Coerthas Central Highlands		"31, 18; 12, 31; 22, 29"		Natalan Watchwolf, Snow Wolf, Snow Wolf Pup				
 hunting	Karakul Skin	35-39	Coerthas	Coerthas Central Highlands		21, 16		Ornery Caracul				
 logging	Mirror Apple	45	Coerthas	Coerthas Central Highlands		23, 18						
+logging	Mistletoe	45	Coerthas	Coerthas Central Highlands		23, 18						
 mining	Jade	40	Coerthas	Coerthas Central Highlands		24, 20						
 mining	Raw Zircon	40	Coerthas	Coerthas Central Highlands		24, 20						
+duty	Faded Copy of The Dark's Embrace	50	Dungeon	Copperbell Mines (Hard)								
+duty	Faded Copy of Riptide	50	Dungeon	Sastasha (Hard)								
+duty	Mossy Horn	47	Dungeon	The Aurum Vale								In a chest before second boss (Coincounter)
+duty	Dodore Wing	47	Dungeon	The Aurum Vale								Only one chest actually drops the Dodore Wing and it's the one next to two groups of scorpions (Vale Banemite and Vale Diremite) right after the second boss.
+duty	Faded Copy of Dark Vows	50	Dungeon	The Tam-Tara Deepcroft (Hard)								
+duty	Uraeus Skin	50	Dungeon	The Wanderer’s Palace								As far as Wanderer's Palace, It ONLY drops in a chest just west of the Second boss. 100% drop rate. 3-5 skins.
+fishing	Bianaq Bream	27	La Noscea	Eastern La Noscea		32, 34			ocean			
+fishing	Blowfish	30	La Noscea	Eastern La Noscea		35, 29			ocean			
+fishing	Ash Tuna	32	La Noscea	Eastern La Noscea		35, 29			ocean			
+fishing	Indigo Herring	31	La Noscea	Eastern La Noscea		35, 29			ocean			
+fishing	Fullmoon Sardine	34	La Noscea	Eastern La Noscea		35, 29	18:00 – 06:00		ocean			
+fishing	Black Sole	28	La Noscea	Eastern La Noscea		32, 24			ocean			
 fishing	Silver Shark	41	La Noscea	Eastern La Noscea		15, 15			ocean			Mooch Merithor Goby to catch Silver Shark
 harvesting	Midland Basil	35	La Noscea	Eastern La Noscea		27, 30						
 harvesting	Mandrake	35	La Noscea	Eastern La Noscea		27, 30						
+harvesting	Salt Leek	35	La Noscea	Eastern La Noscea		27, 29						
+harvesting	Dragon Pepper	35	La Noscea	Eastern La Noscea		27, 30						
 harvesting	Mugwort	40	La Noscea	Eastern La Noscea		21, 29						
 harvesting	Ramhorn Zucchini	40	La Noscea	Eastern La Noscea		21, 29						
+harvesting	Maiden Artichoke	40	La Noscea	Eastern La Noscea		20, 30						
 hunting	Apkallu Egg	30	La Noscea	Eastern La Noscea		27, 36		Apkallu				
 hunting	Apkallu Down	30	La Noscea	Eastern La Noscea		27, 36		Apkallu				
 hunting	Buffalo Sirloin	31	La Noscea	Eastern La Noscea		27, 34		Buffalo family				
 hunting	Night Milk	31	La Noscea	Eastern La Noscea		27, 34		Buffalo family				
 hunting	Jellyfish Umbrella	33	La Noscea	Eastern La Noscea		31, 26		Bloodshore Bell				
+hunting	Goobbue Fang	33	La Noscea	Eastern La Noscea		16, 28						
+hunting	Jellyfish Cnida	33	La Noscea	Eastern La Noscea		35, 31						
+hunting	Garlean Steel Joint	50	La Noscea	Eastern La Noscea		29, 20		2nd Cohort Vanguard				
+hunting	Garlean Steel Plate	50	La Noscea	Eastern La Noscea		29, 20		2nd Cohort Vanguard				
 logging	Almonds	40	La Noscea	Eastern La Noscea		19, 28						
 logging	Iron Acorn	40	La Noscea	Eastern La Noscea		19, 26						
 logging	Mahogany Log	40	La Noscea	Eastern La Noscea		19, 26						
 logging	Nutmeg	40	La Noscea	Eastern La Noscea		19, 26						
-mining	Raw Garnet	35	La Noscea	Eastern La Noscea		29, 27
-buying	Buffalo Milk	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
-buying	Mineral Water	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
-buying	Sour Red	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
-buying	Tallow Candle	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
-buying	Marbled Eye	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
+mining	Raw Garnet	35	La Noscea	Eastern La Noscea		29, 27						
+mining	Raw Goshenite	35	La Noscea	Eastern La Noscea		29, 27						
+mining	Raw Aquamarine	35	La Noscea	Eastern La Noscea		29, 27						
+buying	Buffalo Milk	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
+buying	Mineral Water	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
+buying	Sour Red	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
+buying	Tallow Candle	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
+buying	Marbled Eye	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
+buying	Terebinth	1	La Noscea	Limsa Lominsa Lower Decks		6, 12		Unsynrael				
+buying	Chicken Egg	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
+buying	Aldgoat Milk	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
+buying	Chicken Breast	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
+buying	Gysahi Greens	1	La Noscea	Limsa Lominsa Lower Decks		10, 11		Bango Zango				
+fishing	Lominsan Anchovy	1	La Noscea	Limsa Lominsa Lower Decks		10, 9			ocean			
 fishing	Coral Butterfly	10	La Noscea	Limsa Lominsa Lower Decks		7, 12			ocean			
 logging	Cock Feather	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
 buying	Tiny Crown	0	La Noscea	Limsa Lominsa Upper Decks		10, 8		Jossy				
 buying	Pudding Flesh	0	La Noscea	Limsa Lominsa Upper Decks		13, 13		Storm Quartermaster				200 seals
+buying	Potash	1	La Noscea	Limsa Lominsa Upper Decks		13, 13		Storm Quartermaster				200 seals
+buying	Haddock	1	La Noscea	Limsa Lominsa Upper Decks		10, 14		Holasfhis				
+buying	Finger Shrimp	1	La Noscea	Limsa Lominsa Upper Decks		10, 14		Holasfhis				
+fishing	Tiger Cod	10	La Noscea	Lower La Noscea		20, 38			ocean			
+fishing	Rothlyt Oyster	10	La Noscea	Lower La Noscea		20, 38			ocean			
+fishing	Crimson Crayfish	15	La Noscea	Lower La Noscea		21, 34			freshwater			
+fishing	Navigator’s Dagger	15	La Noscea	Lower La Noscea		26, 34			ocean			
 harvesting	Cinderfoot Olive	15	La Noscea	Lower La Noscea		27, 22						
 harvesting	Lowland Grapes	15	La Noscea	Lower La Noscea		27, 22						
+harvesting	Cieldalaes Spinach	15	La Noscea	Lower La Noscea		26, 23						
+harvesting	Highland Parsley	15	La Noscea	Lower La Noscea		26, 22						
 hunting	Beastkin Blood	7	La Noscea	Lower La Noscea		26, 15		Cave Bat				
 hunting	Bat Wing	7	La Noscea	Lower La Noscea		26, 15		Cave Bat				
 hunting	Bat Fang	7	La Noscea	Lower La Noscea		26, 15		Cave Bat				
 hunting	Animal Sinew	12	La Noscea	Lower La Noscea		20, 35		Moraby Mole				
+hunting	Mole Meat	12	La Noscea	Lower La Noscea		20, 35		Moraby Mole				
 hunting	Animal Skin	1-2	La Noscea	Lower La Noscea		22, 24		Wharf Rat				
 hunting	Megalocrab Leg	11-13	La Noscea	Lower La Noscea		17, 35		Megalocrab				
 hunting	Green Megalocrab Shell	11-13	La Noscea	Lower La Noscea		17, 35		Megalocrab				
+logging	La Noscean Orange	10	La Noscea	Lower La Noscea		32, 16						
+logging	Kukuru Bean	10	La Noscea	Lower La Noscea		31, 16						
 logging	Sun Lemon	20	La Noscea	Lower La Noscea		35, 17						
+mining	Raw Sunstone	10	La Noscea	Lower La Noscea		28, 19						
 quarrying	Earth Crystal	30	La Noscea	Lower La Noscea		26, 16						
 fishing	Princess Trout	5	La Noscea	Middle La Noscea		22, 22			freshwater			
 harvesting	Sunset Wheat	15	La Noscea	Middle La Noscea		23, 19						
 harvesting	Ruby Tomato	15	La Noscea	Middle La Noscea		23, 19						
+harvesting	Straw	15	La Noscea	Middle La Noscea		23, 19						
+harvesting	La Noscean Lettuce	15	La Noscea	Middle La Noscea		23, 19						
+hunting	Mutton Loin	3-4	La Noscea	Middle La Noscea		22, 26		Lost Lamb				
 hunting	Ram Horn	3-4	La Noscea	Middle La Noscea		22, 26		Lost Lamb				
+hunting	Puk Wing	30	La Noscea	Outer La Noscea		14, 19		Pteroc				
+hunting	Puk Egg	30	La Noscea	Outer La Noscea		15, 19		Pteroc				
 hunting	Raptor Sinew	34	La Noscea	Outer La Noscea		20, 16		Velociraptor				
 hunting	Raptor Skin	34	La Noscea	Outer La Noscea		20, 16		Velociraptor				
 hunting	Raptor Shank	34	La Noscea	Outer La Noscea		20, 16		Velociraptor				
-buying	Worm-eaten Square Shield	35	La Noscea	Upper La Noscea		15, 24		Junkmonger				
-buying	Splintered Cane	35	La Noscea	Upper La Noscea		15, 24		Junkmonger				
-buying	Crooked Guisarme	42	La Noscea	Upper La Noscea		15, 24		Junkmonger				
-buying	Rotting Round Shield	43	La Noscea	Upper La Noscea		15, 24		Junkmonger				
-buying	Warped Bow	47	La Noscea	Upper La Noscea		15, 24		Junkmonger				
-buying	Blunt Goblin Longsword	47	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Worm-eaten Square Shield	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Blunt Goblin Scimitar	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Nicked Viking Sword	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Splintered Cane	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Crooked Guisarme	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Rotting Round Shield	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Warped Bow	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Blunt Goblin Longsword	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Blunt Bastard Sword	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Notched Bill	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Dented Celata	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Rusting Scutum	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Blackened Scale Mail	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Notched Buckler	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Scarred Kite Shield	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Ripped Haubergeon	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Damaged Cudgel	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Mildewed Thighboots	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Blackened Smithy's Gloves	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Moth-eaten Coatee	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Frayed Cotton Doublet Vest	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Stained Chef's Apron	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Ripped Chef's Hat	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Ripped Hose	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Moth-eaten Seneschal Coatee	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Torn Coif	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Cracked Daggers	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Tattered Robe	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Tattered Robe	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+fishing	Warmwater Trout	23	La Noscea	Upper La Noscea		9, 20			freshwater			
 harvesting	Pixie Plums	25	La Noscea	Upper La Noscea		14, 25						
 harvesting	Chamomile	25	La Noscea	Upper La Noscea		14, 25						
+harvesting	Noble Grapes	25	La Noscea	Upper La Noscea		14, 24						
+harvesting	Sticky Rice	25	La Noscea	Upper La Noscea		13, 25						
 harvesting	Black Scorpion	45	La Noscea	Upper La Noscea		35, 25						
 harvesting	Dart Frog	45	La Noscea	Upper La Noscea		35, 25						
+harvesting	Sagolii Sage	45	La Noscea	Upper La Noscea		34, 24						
+harvesting	Rolanbery	45	La Noscea	Upper La Noscea		34, 24						
 mining	Electrum Ore	45	La Noscea	Upper La Noscea		30, 25						
 mining	Raw Turquoise	45	La Noscea	Upper La Noscea		30, 25						
 quarrying	Lightning Rock	25	La Noscea	Upper La Noscea		13, 26						
 quarrying	Fire Rock	25	La Noscea	Upper La Noscea		13, 23						
+quarrying	Water Rock	25	La Noscea	Upper La Noscea		13, 23						
 quarrying	Siltstone	30	La Noscea	Upper La Noscea		13, 26						
+quarrying	Brimstone	30	La Noscea	Upper La Noscea		13, 26						
+quarrying	Electrum Sand	45	La Noscea	Upper La Noscea		28, 21						
+fishing	White Coral	5	La Noscea	Western La Noscea		30, 29			ocean			
+fishing	Helmet Crab	15	La Noscea	Western La Noscea		30, 30			ocean			
+fishing	Blue Coral	25	La Noscea	Eastern La Noscea		32, 34			ocean			
 fishing	Red Coral	40	La Noscea	Western La Noscea		15, 35			ocean			
 fishing	Blacklip Oyster	44	La Noscea	Western La Noscea		15, 35			ocean			
 harvesting	Paprika	20	La Noscea	Western La Noscea		32, 30						
+harvesting	Lalafellin Lentil	20	La Noscea	Western La Noscea		32, 29						
 hunting	Animal Hide	14	La Noscea	Western La Noscea		33, 28		Wild Dodo				
-hunting	Dodo Tenderlion	14	La Noscea	Western La Noscea		33, 28		Wild Dodo				
+hunting	Dodo Tenderloin	14	La Noscea	Western La Noscea		33, 28		Wild Dodo				
+hunting	Dodo Feather	14	La Noscea	Western La Noscea		33, 28		Wild Dodo				
+hunting	Dodo Egg	14	La Noscea	Western La Noscea		33, 28		Wild Dodo				
 mining	Sunrise Tellin	20	La Noscea	Western La Noscea		29, 23						
+mining	Raw Danburite	20	La Noscea	Western La Noscea		28, 23						
 quarrying	Mudstone	20	La Noscea	Western La Noscea		25, 24						
+quarrying	Limestone	20	La Noscea	Western La Noscea		26, 24						
+buying	Faded Copy of Another Round	1	Mor Dhona	Mor Dhona		23, 7		Auriana				500 Allagan Tomestone of Poetics
 hunting	Eft Tail	45	Mor Dhona	Mor Dhona		12, 11		Mudpuppy family				
 hunting	Hippogryph Skin	46	Mor Dhona	Mor Dhona		27, 8		Hippogryph				
 hunting	Hippogryph Sinew	46	Mor Dhona	Mor Dhona		27, 8		Hippogryph				
+logging	Lightning Cluster	50	Mor Dhona	Mor Dhona		32, 11	01:00, 05:00, 09:00					
+fishing	Dark Bass	25	Thanalan	Central Thanalan		16, 23			freshwater			
 harvesting	Black Pepper	15	Thanalan	Central Thanalan		25, 21						
+harvesting	Yellow Ginseng	15	Thanalan	Central Thanalan		24, 19						
+harvesting	Alpine Parsnip	15	Thanalan	Central Thanalan		25, 21						
+hunting	Formic Acid	12	Thanalan	Central Thanalan		16, 15		Antling Sentry				
+hunting	Marmot Meat	1-2	Thanalan	Central Thanalan		19, 27		Star Marmot				
 logging	Cloves	10	Thanalan	Central Thanalan		22, 27						
+logging	Nopales	20	Thanalan	Central Thanalan		21, 20						
 mining	Bone Chip	5	Thanalan	Central Thanalan		24, 27						
 mining	Wind Shard	5	Thanalan	Central Thanalan		19, 26						
 mining	Lightning Shard	5	Thanalan	Central Thanalan		19, 26						
 quarrying	Ragstone	15	Thanalan	Central Thanalan		15, 22						
 quarrying	Rock Salt	15	Thanalan	Central Thanalan		15, 22						
+quarrying	Fine Sand	15	Thanalan	Central Thanalan		15, 21						
+buying	Blue Cheese	1	Thanalan	Eastern Thanalan		14, 25		Shopkeep				
 fishing	Loyal Pleco	42	Thanalan	Eastern Thanalan		21, 21			freshwater			
 harvesting	Popoto	20	Thanalan	Eastern Thanalan		16, 27						
+harvesting	White Scorpion	20	Thanalan	Eastern Thanalan		16, 27						
+harvesting	Button Mushroom	25	Thanalan	Eastern Thanalan		15, 21						
+harvesting	Ala Mhigan Mustard	25	Thanalan	Eastern Thanalan		14, 21						
+harvesting	Millioncorn	25	Thanalan	Eastern Thanalan		15, 22						
 hunting	Aldgoat Horn	16	Thanalan	Eastern Thanalan		17, 22		Myotragus family				
 hunting	Aldgoat Skin	16	Thanalan	Eastern Thanalan		17, 22		Myotragus Billy				
+hunting	Aldgoat Chuck	16	Thanalan	Eastern Thanalan		17, 22		Myotragus family				
 hunting	Snurble Tufts	40	Thanalan	Eastern Thanalan		27, 24		Golden Fleece				
 mining	Alumen	20	Thanalan	Eastern Thanalan		18, 20						
 mining	Raw Malachite	20	Thanalan	Eastern Thanalan		18, 20						
+mining	Raw Fluorite	20	Thanalan	Eastern Thanalan		17, 21						
 mining	Wyvern Obsidian	30	Thanalan	Eastern Thanalan		27, 17						
+mining	Saltpeter	30	Thanalan	Eastern Thanalan		26, 17						
 mining	Raw Amber	45	Thanalan	Eastern Thanalan		13, 19						
+mining	Raw Rubellite	45	Thanalan	Eastern Thanalan		13, 19						
 mining	Gold Ore	50	Thanalan	Eastern Thanalan		28, 22	09:00 – 12:00					
-hunting	Basilisk Egg	49	Thanalan	Northern Thanalan		21, 25		Basilisk				
+quarrying	Pearl Ginger	25	Thanalan	Eastern Thanalan		15, 20						
 hunting	Peiste Skin	49	Thanalan	Northern Thanalan		21, 25		Basilisk				
 hunting	Ahriman Wing	49	Thanalan	Northern Thanalan		24, 21		Ahriman				
 mining	Basilisk Egg	50	Thanalan	Northern Thanalan		23, 24						
 mining	Cobalt Ore	50	Thanalan	Northern Thanalan		23, 24						
+mining	Adamantoise Shell	50	Thanalan	Northern Thanalan		22, 25						
+mining	Ogre Horn	50	Thanalan	Northern Thanalan		22, 25						
 quarrying	Grenade Ash	40	Thanalan	Northern Thanalan		22, 28						
 harvesting	Laurel	35	Thanalan	Southern Thanalan		20, 8						
 harvesting	Desert Saffron	35	Thanalan	Southern Thanalan		20, 8						
+harvesting	Yafaemi Wildgrass	35	Thanalan	Southern Thanalan		21, 9						
+harvesting	Aloe	35	Thanalan	Southern Thanalan		20, 9						
+harvesting	Thanalan Tea Leaves	50	Thanalan	Southern Thanalan		14, 31						
+hunting	Orobon Liver	31	Thanalan	Southern Thanalan		18, 31		Dune Angler				
 hunting	Cactuar Needle	25-27	Thanalan	Southern Thanalan		13, 14		Sabotender				
 hunting	Sandworm Fang	31-32	Thanalan	Southern Thanalan		13, 34		Sandworm				
 mining	Mythril Ore	35	Thanalan	Southern Thanalan		25, 40						
+mining	Raw Heliodor	35	Thanalan	Southern Thanalan		26, 41						
+mining	Little Worm	35	Thanalan	Southern Thanalan		25, 40						
 quarrying	Bomb Ash	30	Thanalan	Southern Thanalan		22, 30						
+quarrying	Silex	30	Thanalan	Southern Thanalan		23, 30						
+quarrying	Lightning Crystal	30	Thanalan	Southern Thanalan		19, 11						
+quarrying	Mythril Sand	35	Thanalan	Southern Thanalan		17, 17						
+fishing	Dusk Goby	5	Thanalan	Western Thanalan		24, 21			freshwater			
 fishing	Brass Loach	9	Thanalan	Western Thanalan		24, 22			freshwater			
 fishing	Hammerhead Shark	29	Thanalan	Western Thanalan		15, 28			ocean			
 fishing	Whitelip Oyster	35	Thanalan	Western Thanalan		9, 6			ocean			
@@ -109,6 +226,8 @@ harvesting	Rye	15	Thanalan	Western Thanalan		25, 19
 harvesting	Grass Viper	15	Thanalan	Western Thanalan		24, 19						
 harvesting	Garlean Garlic	15	Thanalan	Western Thanalan		23, 24						
 harvesting	Wild Onion	15	Thanalan	Western Thanalan		23, 24						
+harvesting	Coerthan Carrot	15	Thanalan	Western Thanalan		23, 20						
+harvesting	Ogre Pumpkin	15	Thanalan	Western Thanalan		23, 23						
 hunting	Gigantoad Skin	33	Thanalan	Western Thanalan		15, 7		Gigantoad				
 mining	Copper Ore	5	Thanalan	Western Thanalan		27, 26						
 mining	Fire Shard	5	Thanalan	Western Thanalan		27, 26						
@@ -123,6 +242,13 @@ quarrying	Cinnabar	15	Thanalan	Western Thanalan		24, 19
 quarrying	Iron Sand	15	Thanalan	Western Thanalan		24, 19						
 harvesting	Cotton Boll	15	The Black Shroud	Central Shroud		22, 24						
 harvesting	Lavender	15	The Black Shroud	Central Shroud		22, 24						
+harvesting	Carnation	15	The Black Shroud	Central Shroud		23, 23						
+harvesting	Chanterelle	15	The Black Shroud	Central Shroud		22, 24						
+harvesting	Marjoram	15	The Black Shroud	Central Shroud		19, 19						
+harvesting	Tree Toad	15	The Black Shroud	Central Shroud		19, 20						
+harvesting	Buffalo Beans	15	The Black Shroud	Central Shroud		19, 20						
+hunting	Imp Wing	9	The Black Shroud	Central Shroud		26, 26		Trickster Imp				
+hunting	Morbol Vine	31	The Black Shroud	Central Shroud		15, 21		Halitostroper				
 hunting	Red Landtrap Leaf	10-13	The Black Shroud	Central Shroud		20, 31		Roselet				
 hunting	Viscous Secretions	11-14	The Black Shroud	Central Shroud		15, 25		Tree Slug				
 hunting	Shriekshroom	3-4	The Black Shroud	Central Shroud		23, 18		Forest Fungar				
@@ -131,20 +257,38 @@ logging	Maple Branch	5	The Black Shroud	Central Shroud		23, 18
 logging	Maple Log	5	The Black Shroud	Central Shroud		23, 18						
 logging	Ice Shard	5	The Black Shroud	Central Shroud		23, 18						
 logging	Maple Log	5	The Black Shroud	Central Shroud		23, 18						
+logging	Allagan Snail	5	The Black Shroud	Central Shroud		24, 18						
 logging	Ash Branch	10	The Black Shroud	Central Shroud		26, 20						
 logging	Ash Log	10	The Black Shroud	Central Shroud		26, 20						
 logging	Crow Feather	10	The Black Shroud	Central Shroud		26, 20						
+logging	Tinolqa Mistletoe	10	The Black Shroud	Central Shroud		26, 20						
 logging	Elm Log	15	The Black Shroud	Central Shroud		20, 20						
+logging	Gridanian Chestnut	15	The Black Shroud	Central Shroud		21, 19						
+mining	Raw Peridot	35	The Black Shroud	Central Shroud		14, 22						
+mining	Raw Amethyst	35	The Black Shroud	Central Shroud		14, 22						
+mining	Granite	35	The Black Shroud	Central Shroud		14, 22						
+harvesting	Belladonna	20	The Black Shroud	East Shroud		19, 28						
+harvesting	Gil Bun	20	The Black Shroud	East Shroud		19, 28						
+harvesting	Galago Mint	20	The Black Shroud	East Shroud		19, 28						
+hunting	Treant Sap	21	The Black Shroud	East Shroud		15, 24		Diseased Treant				
+hunting	Scalekin Blood	24	The Black Shroud	East Shroud		16, 20		Jumping Djigga				
 hunting	Ochu Vine	48	The Black Shroud	East Shroud		23, 18		Milkroot Claster				
-hunting	Scalekin Blood		The Black Shroud	East Shroud		16, 20		Jumping Djigga				
 logging	Faerie Apple	20	The Black Shroud	East Shroud		15, 27						
 logging	Yew Branch	20	The Black Shroud	East Shroud		15, 27						
 logging	Yew Log	20	The Black Shroud	East Shroud		15, 27						
 logging	Rosewood Branch	50	The Black Shroud	East Shroud		16, 23						
 logging	Rosewood Log	50	The Black Shroud	East Shroud		16, 23						
 quarrying	Wind Crystal	30	The Black Shroud	East Shroud		21, 28						
+fishing	Crayfish	1	The Black Shroud	New Gridania		12, 13			no			
+fishing	Pipira	5	The Black Shroud	New Gridania		12, 13			freshwater			
+fishing	Maiden Carp	5	The Black Shroud	New Gridania		12, 13			freshwater			
+fishing	Raincaller	43	The Black Shroud	New Gridania		12, 13			freshwater	rain, snow		
+fishing	Bluebell Salmon	15	The Black Shroud	North Shroud		26, 25			freshwater			
 fishing	Oakroot	44	The Black Shroud	North Shroud		20, 20			freshwater			
 harvesting	Wizard Eggplant	30	The Black Shroud	North Shroud		23, 26						
+harvesting	Moor Leech	30	The Black Shroud	North Shroud		24, 26						
+harvesting	Jade Peas	30	The Black Shroud	North Shroud		23, 26						
+harvesting	Midland Cabbage	30	The Black Shroud	North Shroud		23, 26						
 hunting	Yellow Yarzon Leg	26	The Black Shroud	North Shroud		21, 31						
 hunting	Diremite Sinew	25-27	The Black Shroud	North Shroud		16, 27		Banemite family				
 hunting	Diremite Web	25-27, 29	The Black Shroud	North Shroud		16, 27		Banemite family				
@@ -155,10 +299,17 @@ logging	Maple Sap	5	The Black Shroud	North Shroud		26, 28
 logging	Beehive Chip	5	The Black Shroud	North Shroud		26, 28						
 mining	Earth Shard	5	The Black Shroud	North Shroud		26, 22						
 mining	Raw Lapis Lazuli	10	The Black Shroud	North Shroud		29, 24						
+mining	Potter’s Clay	10	The Black Shroud	North Shroud		28, 25						
+mining	Raw Sphene	20	The Black Shroud	North Shroud		30, 23						
+fishing	Black Eel	25	The Black Shroud	South Shroud		24, 22	17:00 – 10:00		freshwater			
+fishing	Velodyna Carp	38	The Black Shroud	South Shroud		24, 22			freshwater			
 harvesting	Flax	35	The Black Shroud	South Shroud		17, 30						
 harvesting	Wildfowl Feather	35	The Black Shroud	South Shroud		17, 30						
+harvesting	White Truffle	35	The Black Shroud	South Shroud		16, 27						
 harvesting	Blood Currants	40	The Black Shroud	South Shroud		22, 29						
+harvesting	Thyme	40	The Black Shroud	South Shroud		20, 29						
 hunting	Blue Yarzon Leg	25	The Black Shroud	South Shroud		22, 23		River Yarzon				
+hunting	Antelope Shank	20-23	The Black Shroud	South Shroud		15, 18		Antelope Doe				
 hunting	Blue Landtrap Leaf	21-24	The Black Shroud	South Shroud		16, 20		Kedtrap				
 hunting	Antelope Horn	25-28	The Black Shroud	South Shroud		21, 20		Antelope Stag				
 hunting	Beast Sinew	25-28	The Black Shroud	South Shroud		21, 20		Antelope Stag				
@@ -166,11 +317,16 @@ hunting	Boar Hide	45-46	The Black Shroud	South Shroud		29, 24		Wild Hog
 logging	Walnut Log	25	The Black Shroud	South Shroud		23, 22						
 logging	Matron’s Mistletoe	25	The Black Shroud	South Shroud		23, 22						
 logging	Chocobo Feather	30	The Black Shroud	South Shroud		26, 19						
+logging	Alligator Pearl	30	The Black Shroud	South Shroud		26, 19						
 logging	Oak Branch	35	The Black Shroud	South Shroud		17, 30						
 logging	Oak Log	35	The Black Shroud	South Shroud		17, 30						
+logging	Tarantula	35	The Black Shroud	South Shroud		18, 30						
 mining	Effervescent Water	25	The Black Shroud	South Shroud		16, 20						
 mining	Silver Ore	25	The Black Shroud	South Shroud		16, 20						
 mining	Black Alumen	40	The Black Shroud	South Shroud		29, 22						
 mining	Raw Spinel	40	The Black Shroud	South Shroud		29, 22						
-quarrying	Silver Sand	25	The Black Shroud	South Shroud		23, 22
-mining	Raw Goshenite	35	La Noscea	Eastern La Noscea		29, 27
+mining	Raw Tourmaline	40	The Black Shroud	South Shroud		29, 23						
+quarrying	Silver Sand	25	The Black Shroud	South Shroud		23, 22						
+quarrying	Earth Rock	25	The Black Shroud	South Shroud		22, 22						
+quarrying	Ice Rock	25	The Black Shroud	South Shroud		23, 21						
+quarrying	Wind Rock	25	The Black Shroud	South Shroud		23, 21						
