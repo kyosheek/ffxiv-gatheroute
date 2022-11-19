@@ -22,6 +22,7 @@ const currentItemInList = computed(() => {
 
     return props.materials.filter(row => row.name.toLowerCase() === currentItem.value.toLowerCase()).length === 1;
 });
+const sortedItemsToGatherKeys = computed(() => Object.keys(props.toGather).sort((a, b) => a.charCodeAt(0) - b.charCodeAt(0)));
 
 const filterInput = (evt) => {
 
@@ -76,13 +77,13 @@ const removeItemFromGatherList = (name) => delete props.toGather[name];
                 </p>
             </template>
         </section>
-        <template v-if="Object.keys(toGather).length > 0">
+        <template v-if="sortedItemsToGatherKeys.length > 0">
             <hr/>
             <section>
                 <ul class="selector-items">
-                    <template v-for="(quantity, name) in toGather">
+                    <template v-for="name in sortedItemsToGatherKeys">
                         <li class="item">
-                            <div><b>{{ name }}</b><br/><i>{{ quantity }}</i></div>
+                            <div><b>{{ name }}</b><br/><i>{{ toGather[name].quantity }}</i></div>
                             <button @click="() => removeItemFromGatherList(name)">x</button>
                         </li>
                     </template>
