@@ -90,7 +90,7 @@ const drawMap = () => {
         {
             let x, y;
 
-            if (item.location.includes('Limsa Lominsa'))
+            if (item.location.includes('Limsa Lominsa') || item.location.includes('Gridania'))
             {
                 x = item.x / (d.right / 2 - d.left) * d.width;
                 y = item.y / (d.bottom / 2 - d.top) * d.height;
