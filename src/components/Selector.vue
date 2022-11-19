@@ -68,8 +68,7 @@ const handleInputChange = (evt, name) => {
                         Quantity:
                         <input v-model="toGather[currentItem]"
                                type="number"
-                               step="1"
-                               min="1"
+                               min="1" step="1"
                                placeholder="0"
                                @keypress="(evt) => filterInput(evt)"
                                @input="(evt) => handleInputChange(evt, currentItem)" />
@@ -86,11 +85,10 @@ const handleInputChange = (evt, name) => {
                         <li class="item">
                             <div><b>{{ name }}</b><br/><input v-model="toGather[name]"
                                                               type="number"
-                                                              step="1"
-                                                              min="1"
+                                                              min="1" step="1"
                                                               placeholder="0"
                                                               @keypress="(evt) => filterInput(evt)"
-                                                              @input="(evt) => handleInputChange(evt, currentItem)"/></div>
+                                                              @input="(evt) => handleInputChange(evt, name)" /></div>
                             <button @click="$emit('removeItemFromToGatherList', name)">x</button>
                         </li>
                     </template>
