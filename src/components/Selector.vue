@@ -84,7 +84,13 @@ const handleInputChange = (evt, name) => {
                 <ul class="selector-items">
                     <template v-for="name in sortedItemsToGatherKeys">
                         <li class="item">
-                            <div><b>{{ name }}</b><br/><i>{{ toGather[name] }}</i></div>
+                            <div><b>{{ name }}</b><br/><input v-model="toGather[name]"
+                                                              type="number"
+                                                              step="1"
+                                                              min="1"
+                                                              placeholder="0"
+                                                              @keypress="(evt) => filterInput(evt)"
+                                                              @input="(evt) => handleInputChange(evt, currentItem)"/></div>
                             <button @click="$emit('removeItemFromToGatherList', name)">x</button>
                         </li>
                     </template>
