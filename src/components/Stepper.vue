@@ -69,7 +69,7 @@ export default {
                         action = `[Fisher] Fish for lv${item.lv} ${item.name} fish at (${item.x}, ${item.y}) with ${item.bait} bait`;
                         break;
                     case 'buying':
-                        action = `[Any] Buy ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
+                        action = `[Any] Buy ${item.quantity} ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
                         break;
                     case 'duty':
                         switch (item.region)
