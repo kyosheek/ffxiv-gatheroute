@@ -20,7 +20,7 @@ fetch('assets/data/materials.tsv')
     .then(text => tsvParse(text))
     .then(data =>
     {
-        materials.value = data.sort((a, b) => a.name.charCodeAt(0) - b.name.charCodeAt(0));
+        materials.value = data.sort();
     })
     .catch(err =>
     {

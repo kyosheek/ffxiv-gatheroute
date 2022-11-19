@@ -77,7 +77,7 @@ const materialsToGatherByRegionsAndLocations = computed(() => {
 
 const hasItemsToGather = computed(() => Object.keys(props.toGather).length > 0);
 
-const routeRegions = computed(() => Object.keys(route.value));
+const routeRegions = computed(() => Object.keys(route.value).sort());
 
 const currentRegionLocations = computed(() => {
 

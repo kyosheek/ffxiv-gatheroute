@@ -22,7 +22,7 @@ const currentItemInList = computed(() => {
 
     return props.materials.filter(row => row.name.toLowerCase() === currentItem.value.toLowerCase()).length === 1;
 });
-const sortedItemsToGatherKeys = computed(() => Object.keys(props.toGather).sort((a, b) => a.charCodeAt(0) - b.charCodeAt(0)));
+const sortedItemsToGatherKeys = computed(() => Object.keys(props.toGather).sort());
 
 const filterInput = (evt) => {
 
