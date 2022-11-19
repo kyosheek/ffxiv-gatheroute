@@ -83,7 +83,7 @@ const removeItemFromGatherList = (name) => delete props.toGather[name];
                 <ul class="selector-items">
                     <template v-for="name in sortedItemsToGatherKeys">
                         <li class="item">
-                            <div><b>{{ name }}</b><br/><i>{{ toGather[name].quantity }}</i></div>
+                            <div><b>{{ name }}</b><br/><i>{{ toGather[name] }}</i></div>
                             <button @click="() => removeItemFromGatherList(name)">x</button>
                         </li>
                     </template>

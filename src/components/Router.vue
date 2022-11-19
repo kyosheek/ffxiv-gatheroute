@@ -92,7 +92,7 @@ const currentRegionLocations = computed(() => {
 
 const canSetNextLoc = computed(() => {
 
-    return currentLocationIndex.value < currentRegionLocations.length - 1 || currentRegionIndex.value < routeRegions.value.length - 1;
+    return currentLocationIndex.value < currentRegionLocations.value.length - 1 || currentRegionIndex.value < routeRegions.value.length - 1;
 });
 
 const canSetPrevLoc = computed(() => {
@@ -187,10 +187,10 @@ const initRouting = () => solveTravelingSalesmanProblem();
 
 const setNextLoc = () => {
 
-    if (canSetNextLoc)
+    if (canSetNextLoc.value)
     {
         currentLocationIndex.value += 1;
-        if (currentLocationIndex.value >= currentRegionLocations.length)
+        if (currentLocationIndex.value >= currentRegionLocations.value.length)
         {
             currentLocationIndex.value = 0;
             currentRegionIndex.value += 1;
@@ -200,13 +200,13 @@ const setNextLoc = () => {
 
 const setPrevLoc = () => {
 
-    if (canSetPrevLoc)
+    if (canSetPrevLoc.value)
     {
         currentLocationIndex.value -= 1;
         if (currentLocationIndex.value < 0)
         {
             currentRegionIndex.value -= 1;
-            currentLocationIndex.value = currentRegionLocations.length - 1;
+            currentLocationIndex.value = currentRegionLocations.value.length - 1;
         }
     }
 };
