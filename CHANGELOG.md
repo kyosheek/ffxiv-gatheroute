@@ -1,5 +1,11 @@
 # Changelog
 
+## Nov 20, 2022
+### QoL improvements
+
+- Now it is possible to edit quantity in selected list instead going to items list
+- Locations inside regions and selected materials sorted by alphabet for easier navigation
+
 ## Nov 19, 2022
 
 - Update materials table
