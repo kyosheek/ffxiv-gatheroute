@@ -66,7 +66,7 @@ export default {
                         action = `[Botanist] Harvest lv${item.lv} nodes for`;
                         break;
                     case 'fishing':
-                        action = `[Fisher] Fish for lv${item.lv} ${item.name} fish at (${item.x}, ${item.y}) with ${item.bait} bait`;
+                        action = `[Fisher] Fish for ${item.quantity} lv${item.lv} ${item.name} fish at (${item.x}, ${item.y}) with ${item.bait} bait`;
                         break;
                     case 'buying':
                         action = `[Any] Buy ${item.quantity} ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
