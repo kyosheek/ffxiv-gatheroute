@@ -190,7 +190,7 @@ const setNextLoc = () => {
     if (canSetNextLoc)
     {
         currentLocationIndex.value += 1;
-        if (currentLocationIndex.value >= this.currentRegionLocations.length)
+        if (currentLocationIndex.value >= currentRegionLocations.length)
         {
             currentLocationIndex.value = 0;
             currentRegionIndex.value += 1;
