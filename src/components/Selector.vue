@@ -1,5 +1,7 @@
 <script setup>
-import { ref, defineProps, computed } from "vue";
+import { ref, defineProps, computed, defineEmits } from "vue";
+
+defineEmits([ 'removeItemFromToGatherList', 'clearToGatherList' ]);
 
 const props = defineProps({
 
@@ -39,8 +41,6 @@ const handleInputChange = (evt, name) => {
         delete props.toGather[name];
     }
 };
-
-const removeItemFromGatherList = (name) => delete props.toGather[name];
 </script>
 
 <template>
@@ -80,11 +80,12 @@ const removeItemFromGatherList = (name) => delete props.toGather[name];
         <template v-if="sortedItemsToGatherKeys.length > 0">
             <hr/>
             <section>
+                <button @click="$emit('clearToGatherList')">Clear list</button>
                 <ul class="selector-items">
                     <template v-for="name in sortedItemsToGatherKeys">
                         <li class="item">
                             <div><b>{{ name }}</b><br/><i>{{ toGather[name] }}</i></div>
-                            <button @click="() => removeItemFromGatherList(name)">x</button>
+                            <button @click="$emit('removeItemFromToGatherList', name)">x</button>
                         </li>
                     </template>
                 </ul>
