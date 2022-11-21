@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineProps, computed } from "vue";
+import { ref, computed } from "vue";
 
 import Stepper from "./Stepper.vue";
 import Map from "./Map.vue";
@@ -59,8 +59,8 @@ const materialsToGatherByRegionsAndLocations = computed(() => {
                     }
                     else
                     {
-                        el.x = parseInt(coordinates[0]);
-                        el.y = parseInt(coordinates[1]);
+                        el.x = parseFloat(coordinates[0]);
+                        el.y = parseFloat(coordinates[1]);
                     }
                 }
                 else

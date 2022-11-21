@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineProps, computed, defineEmits } from "vue";
+import { ref, computed } from "vue";
 
 defineEmits([ 'removeItemFromToGatherList', 'clearToGatherList' ]);
 
