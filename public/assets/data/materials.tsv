@@ -18,16 +18,16 @@ fishing	Bianaq Bream	27	La Noscea	Eastern La Noscea		32, 34			ocean
 fishing	Blowfish	30	La Noscea	Eastern La Noscea		35, 29			ocean			
 fishing	Ash Tuna	32	La Noscea	Eastern La Noscea		35, 29			ocean			
 fishing	Indigo Herring	31	La Noscea	Eastern La Noscea		35, 29			ocean			
-fishing	Fullmoon Sardine	34	La Noscea	Eastern La Noscea		35, 29	18:00 – 06:00		ocean			
+fishing	Fullmoon Sardine	34	La Noscea	Eastern La Noscea		35, 29	6pm-6am		ocean			
 fishing	Black Sole	28	La Noscea	Eastern La Noscea		32, 24			ocean			
 fishing	Silver Shark	41	La Noscea	Eastern La Noscea		15, 15			ocean			Mooch Merithor Goby to catch Silver Shark
 harvesting	Midland Basil	35	La Noscea	Eastern La Noscea		27, 30						
 harvesting	Mandrake	35	La Noscea	Eastern La Noscea		27, 30						
-harvesting	Salt Leek	35	La Noscea	Eastern La Noscea		27, 29						
+harvesting	Salt Leek	35	La Noscea	Eastern La Noscea		27, 30						
 harvesting	Dragon Pepper	35	La Noscea	Eastern La Noscea		27, 30						
 harvesting	Mugwort	40	La Noscea	Eastern La Noscea		21, 29						
 harvesting	Ramhorn Zucchini	40	La Noscea	Eastern La Noscea		21, 29						
-harvesting	Maiden Artichoke	40	La Noscea	Eastern La Noscea		20, 30						
+harvesting	Maiden Artichoke	40	La Noscea	Eastern La Noscea		21, 29						
 hunting	Apkallu Egg	30	La Noscea	Eastern La Noscea		27, 36		Apkallu				
 hunting	Apkallu Down	30	La Noscea	Eastern La Noscea		27, 36		Apkallu				
 hunting	Buffalo Sirloin	31	La Noscea	Eastern La Noscea		27, 34		Buffalo family				
@@ -66,9 +66,9 @@ fishing	Tiger Cod	10	La Noscea	Lower La Noscea		20, 38			ocean
 fishing	Rothlyt Oyster	10	La Noscea	Lower La Noscea		20, 38			ocean			
 fishing	Crimson Crayfish	15	La Noscea	Lower La Noscea		21, 34			freshwater			
 fishing	Navigator’s Dagger	15	La Noscea	Lower La Noscea		26, 34			ocean			
-harvesting	Cinderfoot Olive	15	La Noscea	Lower La Noscea		27, 22						
-harvesting	Lowland Grapes	15	La Noscea	Lower La Noscea		27, 22						
-harvesting	Cieldalaes Spinach	15	La Noscea	Lower La Noscea		26, 23						
+harvesting	Cinderfoot Olive	15	La Noscea	Lower La Noscea		26, 22						
+harvesting	Lowland Grapes	15	La Noscea	Lower La Noscea		26, 22						
+harvesting	Cieldalaes Spinach	15	La Noscea	Lower La Noscea		26, 22						
 harvesting	Highland Parsley	15	La Noscea	Lower La Noscea		26, 22						
 hunting	Beastkin Blood	7	La Noscea	Lower La Noscea		26, 15		Cave Bat				
 hunting	Bat Wing	7	La Noscea	Lower La Noscea		26, 15		Cave Bat				
@@ -160,7 +160,7 @@ buying	Faded Copy of Another Round	1	Mor Dhona	Mor Dhona		23, 7		Auriana				500 
 hunting	Eft Tail	45	Mor Dhona	Mor Dhona		12, 11		Mudpuppy family				
 hunting	Hippogryph Skin	46	Mor Dhona	Mor Dhona		27, 8		Hippogryph				
 hunting	Hippogryph Sinew	46	Mor Dhona	Mor Dhona		27, 8		Hippogryph				
-logging	Lightning Cluster	50	Mor Dhona	Mor Dhona		32, 11	01:00, 05:00, 09:00					
+logging	Lightning Cluster	50	Mor Dhona	Mor Dhona		32, 11	1am, 5am, 9am					
 fishing	Dark Bass	25	Thanalan	Central Thanalan		16, 23			freshwater			
 harvesting	Black Pepper	15	Thanalan	Central Thanalan		25, 21						
 harvesting	Yellow Ginseng	15	Thanalan	Central Thanalan		24, 19						
@@ -179,9 +179,9 @@ buying	Blue Cheese	1	Thanalan	Eastern Thanalan		14, 25		Shopkeep
 fishing	Loyal Pleco	42	Thanalan	Eastern Thanalan		21, 21			freshwater			
 harvesting	Popoto	20	Thanalan	Eastern Thanalan		16, 27						
 harvesting	White Scorpion	20	Thanalan	Eastern Thanalan		16, 27						
-harvesting	Button Mushroom	25	Thanalan	Eastern Thanalan		15, 21						
+harvesting	Button Mushroom	25	Thanalan	Eastern Thanalan		14, 21						
 harvesting	Ala Mhigan Mustard	25	Thanalan	Eastern Thanalan		14, 21						
-harvesting	Millioncorn	25	Thanalan	Eastern Thanalan		15, 22						
+harvesting	Millioncorn	25	Thanalan	Eastern Thanalan		14, 21						
 hunting	Aldgoat Horn	16	Thanalan	Eastern Thanalan		17, 22		Myotragus family				
 hunting	Aldgoat Skin	16	Thanalan	Eastern Thanalan		17, 22		Myotragus Billy				
 hunting	Aldgoat Chuck	16	Thanalan	Eastern Thanalan		17, 22		Myotragus family				
@@ -193,8 +193,8 @@ mining	Wyvern Obsidian	30	Thanalan	Eastern Thanalan		27, 17
 mining	Saltpeter	30	Thanalan	Eastern Thanalan		26, 17						
 mining	Raw Amber	45	Thanalan	Eastern Thanalan		13, 19						
 mining	Raw Rubellite	45	Thanalan	Eastern Thanalan		13, 19						
-mining	Gold Ore	50	Thanalan	Eastern Thanalan		28, 22	09:00 – 12:00					
-quarrying	Pearl Ginger	25	Thanalan	Eastern Thanalan		15, 20						
+mining	Gold Ore	50	Thanalan	Eastern Thanalan		28, 22	9am-12am					
+harvesting	Pearl Ginger	25	Thanalan	Eastern Thanalan		14, 21						
 hunting	Peiste Skin	49	Thanalan	Northern Thanalan		21, 25		Basilisk				
 hunting	Ahriman Wing	49	Thanalan	Northern Thanalan		24, 21		Ahriman				
 mining	Basilisk Egg	50	Thanalan	Northern Thanalan		23, 24						
@@ -202,9 +202,9 @@ mining	Cobalt Ore	50	Thanalan	Northern Thanalan		23, 24
 mining	Adamantoise Shell	50	Thanalan	Northern Thanalan		22, 25						
 mining	Ogre Horn	50	Thanalan	Northern Thanalan		22, 25						
 quarrying	Grenade Ash	40	Thanalan	Northern Thanalan		22, 28						
-harvesting	Laurel	35	Thanalan	Southern Thanalan		20, 8						
-harvesting	Desert Saffron	35	Thanalan	Southern Thanalan		20, 8						
-harvesting	Yafaemi Wildgrass	35	Thanalan	Southern Thanalan		21, 9						
+harvesting	Laurel	35	Thanalan	Southern Thanalan		20, 9						
+harvesting	Desert Saffron	35	Thanalan	Southern Thanalan		20, 9						
+harvesting	Yafaemi Wildgrass	35	Thanalan	Southern Thanalan		20, 9						
 harvesting	Aloe	35	Thanalan	Southern Thanalan		20, 9						
 harvesting	Thanalan Tea Leaves	50	Thanalan	Southern Thanalan		14, 31						
 hunting	Orobon Liver	31	Thanalan	Southern Thanalan		18, 31		Dune Angler				
@@ -256,7 +256,6 @@ logging	Latex	5	The Black Shroud	Central Shroud		23, 18
 logging	Maple Branch	5	The Black Shroud	Central Shroud		23, 18						
 logging	Maple Log	5	The Black Shroud	Central Shroud		23, 18						
 logging	Ice Shard	5	The Black Shroud	Central Shroud		23, 18						
-logging	Maple Log	5	The Black Shroud	Central Shroud		23, 18						
 logging	Allagan Snail	5	The Black Shroud	Central Shroud		24, 18						
 logging	Ash Branch	10	The Black Shroud	Central Shroud		26, 20						
 logging	Ash Log	10	The Black Shroud	Central Shroud		26, 20						
@@ -264,6 +263,7 @@ logging	Crow Feather	10	The Black Shroud	Central Shroud		26, 20
 logging	Tinolqa Mistletoe	10	The Black Shroud	Central Shroud		26, 20						
 logging	Elm Log	15	The Black Shroud	Central Shroud		20, 20						
 logging	Gridanian Chestnut	15	The Black Shroud	Central Shroud		21, 19						
+logging	Gridanian Walnut	25	The Black Shroud	South Shroud		23, 22						
 mining	Raw Peridot	35	The Black Shroud	Central Shroud		14, 22						
 mining	Raw Amethyst	35	The Black Shroud	Central Shroud		14, 22						
 mining	Granite	35	The Black Shroud	Central Shroud		14, 22						
@@ -301,7 +301,7 @@ mining	Earth Shard	5	The Black Shroud	North Shroud		26, 22
 mining	Raw Lapis Lazuli	10	The Black Shroud	North Shroud		29, 24						
 mining	Potter’s Clay	10	The Black Shroud	North Shroud		28, 25						
 mining	Raw Sphene	20	The Black Shroud	North Shroud		30, 23						
-fishing	Black Eel	25	The Black Shroud	South Shroud		24, 22	17:00 – 10:00		freshwater			
+fishing	Black Eel	25	The Black Shroud	South Shroud		24, 22	5pm-10am		freshwater			
 fishing	Velodyna Carp	38	The Black Shroud	South Shroud		24, 22			freshwater			
 harvesting	Flax	35	The Black Shroud	South Shroud		17, 30						
 harvesting	Wildfowl Feather	35	The Black Shroud	South Shroud		17, 30						
@@ -317,7 +317,7 @@ hunting	Boar Hide	45-46	The Black Shroud	South Shroud		29, 24		Wild Hog
 logging	Walnut Log	25	The Black Shroud	South Shroud		23, 22						
 logging	Matron’s Mistletoe	25	The Black Shroud	South Shroud		23, 22						
 logging	Chocobo Feather	30	The Black Shroud	South Shroud		26, 19						
-logging	Alligator Pearl	30	The Black Shroud	South Shroud		26, 19						
+logging	Alligator Pear	30	The Black Shroud	South Shroud		26, 19						
 logging	Oak Branch	35	The Black Shroud	South Shroud		17, 30						
 logging	Oak Log	35	The Black Shroud	South Shroud		17, 30						
 logging	Tarantula	35	The Black Shroud	South Shroud		18, 30						
