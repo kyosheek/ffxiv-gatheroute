@@ -71,14 +71,20 @@ export default {
                     case 'buying':
                         action = `[Any] Buy ${item.quantity} ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
                         break;
-                    case 'duty':
+                    case 'other':
                         switch (item.region)
                         {
                             case 'Dungeon':
                                 action = `Run ${item.location} for ${item.quantity} ${item.name}`;
                                 break;
+                            case 'Voyage':
+                                action = `Complete ${item.location} for ${item.quantity} ${item.name}`;
+                                break;
+                            case 'Treasure Map':
+                                action = `Obtain ${item.quantity} ${item.name} from following treasure maps:`;
+                                break;
                             default:
-                                action = 'No switch case for region / Please report a bug';
+                                action = `No switch case for region (${item.region}). Please report a bug`;
                                 break;
                         }
                         break;
@@ -87,7 +93,7 @@ export default {
                         break;
                 }
 
-                if (item.profession !== 'buying' && item.profession !== 'fishing' && item.profession !== 'duty')
+                if (item.profession !== 'buying' && item.profession !== 'fishing' && item.profession !== 'other')
                 {
                     action += ` ${item.quantity} ${item.name} at (${item.x}, ${item.y})`;
                     const time = item.time;
