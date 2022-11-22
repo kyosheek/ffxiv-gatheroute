@@ -78,6 +78,7 @@ const handleInputChange = (evt, name) => {
         </section>
         <template v-if="sortedItemsToGatherKeys.length > 0">
             <hr/>
+            <p>Items count: {{ sortedItemsToGatherKeys.length }}</p>
             <section>
                 <button @click="$emit('clearToGatherList')">Clear list</button>
                 <ul class="selector-items">
