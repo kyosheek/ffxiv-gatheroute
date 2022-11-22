@@ -8,18 +8,24 @@ logging	Mirror Apple	45	Coerthas	Coerthas Central Highlands		23, 18
 logging	Mistletoe	45	Coerthas	Coerthas Central Highlands		23, 18						
 mining	Jade	40	Coerthas	Coerthas Central Highlands		24, 20						
 mining	Raw Zircon	40	Coerthas	Coerthas Central Highlands		24, 20						
-duty	Faded Copy of The Dark's Embrace	50	Dungeon	Copperbell Mines (Hard)								
-duty	Faded Copy of Riptide	50	Dungeon	Sastasha (Hard)								
-duty	Mossy Horn	47	Dungeon	The Aurum Vale								In a chest before second boss (Coincounter)
-duty	Dodore Wing	47	Dungeon	The Aurum Vale								Only one chest actually drops the Dodore Wing and it's the one next to two groups of scorpions (Vale Banemite and Vale Diremite) right after the second boss.
-duty	Faded Copy of Dark Vows	50	Dungeon	The Tam-Tara Deepcroft (Hard)								
-duty	Uraeus Skin	50	Dungeon	The Wanderer’s Palace								As far as Wanderer's Palace, It ONLY drops in a chest just west of the Second boss. 100% drop rate. 3-5 skins.
+buying	Vath Stickpeddler	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
+buying	Pahsana Fruit	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
+buying	Tantaplant	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
+buying	Mimett Gourd	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
+buying	Curiel Root	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
+other	Faded Copy of The Dark's Embrace	50	Dungeon	Copperbell Mines (Hard)								
+other	Faded Copy of Riptide	50	Dungeon	Sastasha (Hard)								
+other	Mossy Horn	47	Dungeon	The Aurum Vale								In a chest before second boss (Coincounter)
+other	Dodore Wing	47	Dungeon	The Aurum Vale								Only one chest actually drops the Dodore Wing and it's the one next to two groups of scorpions (Vale Banemite and Vale Diremite) right after the second boss.
+other	Faded Copy of Dark Vows	50	Dungeon	The Tam-Tara Deepcroft (Hard)								
+other	Uraeus Skin	50	Dungeon	The Wanderer’s Palace								As far as Wanderer's Palace, It ONLY drops in a chest just west of the Second boss. 100% drop rate. 3-5 skins.
+fishing	Blue Coral	25	La Noscea	Eastern La Noscea		32, 34			ocean			
 fishing	Bianaq Bream	27	La Noscea	Eastern La Noscea		32, 34			ocean			
-fishing	Blowfish	30	La Noscea	Eastern La Noscea		35, 29			ocean			
-fishing	Ash Tuna	32	La Noscea	Eastern La Noscea		35, 29			ocean			
-fishing	Indigo Herring	31	La Noscea	Eastern La Noscea		35, 29			ocean			
-fishing	Fullmoon Sardine	34	La Noscea	Eastern La Noscea		35, 29	6pm-6am		ocean			
 fishing	Black Sole	28	La Noscea	Eastern La Noscea		32, 24			ocean			
+fishing	Blowfish	30	La Noscea	Eastern La Noscea		35, 29			ocean			
+fishing	Indigo Herring	31	La Noscea	Eastern La Noscea		35, 29			ocean			
+fishing	Ash Tuna	32	La Noscea	Eastern La Noscea		35, 29			ocean			
+fishing	Fullmoon Sardine	34	La Noscea	Eastern La Noscea		35, 29	6pm-6am		ocean			
 fishing	Silver Shark	41	La Noscea	Eastern La Noscea		15, 15			ocean			Mooch Merithor Goby to catch Silver Shark
 harvesting	Midland Basil	35	La Noscea	Eastern La Noscea		27, 30						
 harvesting	Mandrake	35	La Noscea	Eastern La Noscea		27, 30						
@@ -33,8 +39,8 @@ hunting	Apkallu Down	30	La Noscea	Eastern La Noscea		27, 36		Apkallu
 hunting	Buffalo Sirloin	31	La Noscea	Eastern La Noscea		27, 34		Buffalo family				
 hunting	Night Milk	31	La Noscea	Eastern La Noscea		27, 34		Buffalo family				
 hunting	Jellyfish Umbrella	33	La Noscea	Eastern La Noscea		31, 26		Bloodshore Bell				
-hunting	Goobbue Fang	33	La Noscea	Eastern La Noscea		16, 28						
-hunting	Jellyfish Cnida	33	La Noscea	Eastern La Noscea		35, 31						
+hunting	Goobbue Fang	33	La Noscea	Eastern La Noscea		16, 28		Goobbue				
+hunting	Jellyfish Cnida	33	La Noscea	Eastern La Noscea		31, 26		Bloodshore Bell				
 hunting	Garlean Steel Joint	50	La Noscea	Eastern La Noscea		29, 20		2nd Cohort Vanguard				
 hunting	Garlean Steel Plate	50	La Noscea	Eastern La Noscea		29, 20		2nd Cohort Vanguard				
 logging	Almonds	40	La Noscea	Eastern La Noscea		19, 28						
@@ -95,35 +101,36 @@ hunting	Puk Egg	30	La Noscea	Outer La Noscea		15, 19		Pteroc
 hunting	Raptor Sinew	34	La Noscea	Outer La Noscea		20, 16		Velociraptor				
 hunting	Raptor Skin	34	La Noscea	Outer La Noscea		20, 16		Velociraptor				
 hunting	Raptor Shank	34	La Noscea	Outer La Noscea		20, 16		Velociraptor				
-buying	Worm-eaten Square Shield	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Blunt Goblin Scimitar	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Nicked Viking Sword	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Splintered Cane	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Crooked Guisarme	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Rotting Round Shield	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Warped Bow	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Blunt Goblin Longsword	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Blunt Bastard Sword	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Notched Bill	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Dented Celata	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Rusting Scutum	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Blackened Scale Mail	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Notched Buckler	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Scarred Kite Shield	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Ripped Haubergeon	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Damaged Cudgel	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Mildewed Thighboots	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Blackened Smithy's Gloves	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Moth-eaten Coatee	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Frayed Cotton Doublet Vest	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Stained Chef's Apron	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Ripped Chef's Hat	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Ripped Hose	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Moth-eaten Seneschal Coatee	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Torn Coif	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Cracked Daggers	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Tattered Robe	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
-buying	Tattered Robe	1	La Noscea	Upper La Noscea		26, 26		Junkmonger				
+buying	Brittle Picatrix	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Worm-eaten Square Shield	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Blunt Goblin Scimitar	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Nicked Viking Sword	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Splintered Cane	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Crooked Guisarme	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Rotting Round Shield	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Warped Bow	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Blunt Goblin Longsword	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Blunt Bastard Sword	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Notched Bill	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Dented Celata	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Rusting Scutum	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Blackened Scale Mail	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Notched Buckler	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Scarred Kite Shield	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Ripped Haubergeon	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Damaged Cudgel	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Mildewed Thighboots	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Blackened Smithy's Gloves	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Moth-eaten Coatee	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Frayed Cotton Doublet Vest	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Stained Chef's Apron	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Ripped Chef's Hat	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Ripped Hose	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Moth-eaten Seneschal Coatee	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Torn Coif	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Cracked Daggers	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Tattered Robe	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
+buying	Tattered Robe	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
 fishing	Warmwater Trout	23	La Noscea	Upper La Noscea		9, 20			freshwater			
 harvesting	Pixie Plums	25	La Noscea	Upper La Noscea		14, 25						
 harvesting	Chamomile	25	La Noscea	Upper La Noscea		14, 25						
@@ -143,7 +150,6 @@ quarrying	Brimstone	30	La Noscea	Upper La Noscea		13, 26
 quarrying	Electrum Sand	45	La Noscea	Upper La Noscea		28, 21						
 fishing	White Coral	5	La Noscea	Western La Noscea		30, 29			ocean			
 fishing	Helmet Crab	15	La Noscea	Western La Noscea		30, 30			ocean			
-fishing	Blue Coral	25	La Noscea	Eastern La Noscea		32, 34			ocean			
 fishing	Red Coral	40	La Noscea	Western La Noscea		15, 35			ocean			
 fishing	Blacklip Oyster	44	La Noscea	Western La Noscea		15, 35			ocean			
 harvesting	Paprika	20	La Noscea	Western La Noscea		32, 30						
@@ -182,19 +188,19 @@ harvesting	White Scorpion	20	Thanalan	Eastern Thanalan		16, 27
 harvesting	Button Mushroom	25	Thanalan	Eastern Thanalan		14, 21						
 harvesting	Ala Mhigan Mustard	25	Thanalan	Eastern Thanalan		14, 21						
 harvesting	Millioncorn	25	Thanalan	Eastern Thanalan		14, 21						
+harvesting	Pearl Ginger	25	Thanalan	Eastern Thanalan		14, 21						
 hunting	Aldgoat Horn	16	Thanalan	Eastern Thanalan		17, 22		Myotragus family				
 hunting	Aldgoat Skin	16	Thanalan	Eastern Thanalan		17, 22		Myotragus Billy				
 hunting	Aldgoat Chuck	16	Thanalan	Eastern Thanalan		17, 22		Myotragus family				
 hunting	Snurble Tufts	40	Thanalan	Eastern Thanalan		27, 24		Golden Fleece				
 mining	Alumen	20	Thanalan	Eastern Thanalan		18, 20						
 mining	Raw Malachite	20	Thanalan	Eastern Thanalan		18, 20						
-mining	Raw Fluorite	20	Thanalan	Eastern Thanalan		17, 21						
+mining	Raw Fluorite	20	Thanalan	Eastern Thanalan		18, 20						
 mining	Wyvern Obsidian	30	Thanalan	Eastern Thanalan		27, 17						
 mining	Saltpeter	30	Thanalan	Eastern Thanalan		26, 17						
 mining	Raw Amber	45	Thanalan	Eastern Thanalan		13, 19						
 mining	Raw Rubellite	45	Thanalan	Eastern Thanalan		13, 19						
 mining	Gold Ore	50	Thanalan	Eastern Thanalan		28, 22	9am-12am					
-harvesting	Pearl Ginger	25	Thanalan	Eastern Thanalan		14, 21						
 hunting	Peiste Skin	49	Thanalan	Northern Thanalan		21, 25		Basilisk				
 hunting	Ahriman Wing	49	Thanalan	Northern Thanalan		24, 21		Ahriman				
 mining	Basilisk Egg	50	Thanalan	Northern Thanalan		23, 24						
@@ -223,7 +229,7 @@ fishing	Hammerhead Shark	29	Thanalan	Western Thanalan		15, 28			ocean
 fishing	Whitelip Oyster	35	Thanalan	Western Thanalan		9, 6			ocean			
 harvesting	Moko Grass	15	Thanalan	Western Thanalan		25, 19						
 harvesting	Rye	15	Thanalan	Western Thanalan		25, 19						
-harvesting	Grass Viper	15	Thanalan	Western Thanalan		24, 19						
+harvesting	Grass Viper	15	Thanalan	Western Thanalan		25, 19						
 harvesting	Garlean Garlic	15	Thanalan	Western Thanalan		23, 24						
 harvesting	Wild Onion	15	Thanalan	Western Thanalan		23, 24						
 harvesting	Coerthan Carrot	15	Thanalan	Western Thanalan		23, 20						
@@ -240,6 +246,7 @@ mining	Zinc Ore	10	Thanalan	Western Thanalan		22, 29
 mining	Iron Ore	15	Thanalan	Western Thanalan		27, 17						
 quarrying	Cinnabar	15	Thanalan	Western Thanalan		24, 19						
 quarrying	Iron Sand	15	Thanalan	Western Thanalan		24, 19						
+quarrying	Copper Sand	15	Thanalan	Western Thanalan		24, 19						
 harvesting	Cotton Boll	15	The Black Shroud	Central Shroud		22, 24						
 harvesting	Lavender	15	The Black Shroud	Central Shroud		22, 24						
 harvesting	Carnation	15	The Black Shroud	Central Shroud		23, 23						
@@ -263,7 +270,6 @@ logging	Crow Feather	10	The Black Shroud	Central Shroud		26, 20
 logging	Tinolqa Mistletoe	10	The Black Shroud	Central Shroud		26, 20						
 logging	Elm Log	15	The Black Shroud	Central Shroud		20, 20						
 logging	Gridanian Chestnut	15	The Black Shroud	Central Shroud		21, 19						
-logging	Gridanian Walnut	25	The Black Shroud	South Shroud		23, 22						
 mining	Raw Peridot	35	The Black Shroud	Central Shroud		14, 22						
 mining	Raw Amethyst	35	The Black Shroud	Central Shroud		14, 22						
 mining	Granite	35	The Black Shroud	Central Shroud		14, 22						
@@ -298,7 +304,7 @@ logging	Cinnamon	5	The Black Shroud	North Shroud		26, 28
 logging	Maple Sap	5	The Black Shroud	North Shroud		26, 28						
 logging	Beehive Chip	5	The Black Shroud	North Shroud		26, 28						
 mining	Earth Shard	5	The Black Shroud	North Shroud		26, 22						
-mining	Raw Lapis Lazuli	10	The Black Shroud	North Shroud		29, 24						
+mining	Raw Lapis Lazuli	10	The Black Shroud	North Shroud		28, 25						
 mining	Potter’s Clay	10	The Black Shroud	North Shroud		28, 25						
 mining	Raw Sphene	20	The Black Shroud	North Shroud		30, 23						
 fishing	Black Eel	25	The Black Shroud	South Shroud		24, 22	5pm-10am		freshwater			
@@ -314,6 +320,7 @@ hunting	Blue Landtrap Leaf	21-24	The Black Shroud	South Shroud		16, 20		Kedtrap
 hunting	Antelope Horn	25-28	The Black Shroud	South Shroud		21, 20		Antelope Stag				
 hunting	Beast Sinew	25-28	The Black Shroud	South Shroud		21, 20		Antelope Stag				
 hunting	Boar Hide	45-46	The Black Shroud	South Shroud		29, 24		Wild Hog				
+logging	Gridanian Walnut	25	The Black Shroud	South Shroud		23, 22						
 logging	Walnut Log	25	The Black Shroud	South Shroud		23, 22						
 logging	Matron’s Mistletoe	25	The Black Shroud	South Shroud		23, 22						
 logging	Chocobo Feather	30	The Black Shroud	South Shroud		26, 19						
@@ -330,3 +337,5 @@ quarrying	Silver Sand	25	The Black Shroud	South Shroud		23, 22
 quarrying	Earth Rock	25	The Black Shroud	South Shroud		22, 22						
 quarrying	Ice Rock	25	The Black Shroud	South Shroud		23, 21						
 quarrying	Wind Rock	25	The Black Shroud	South Shroud		23, 21						
+other	Faded Copy of The Only Path	50	Treasure Map									Dragonskin Treasure Map, Goatskin Treasure Map, Leather Buried Treasure Map, Leather Treasure Map, Peisteskin Treasure Map, Wyvernskin Treasure Map
+other	Faded Copy of A World Apart	50	Voyage	Sea of Clouds – Sector 23								
