@@ -26,7 +26,7 @@ fishing	Blowfish	30	La Noscea	Eastern La Noscea		35, 29			ocean
 fishing	Indigo Herring	31	La Noscea	Eastern La Noscea		35, 29			ocean			
 fishing	Ash Tuna	32	La Noscea	Eastern La Noscea		35, 29			ocean			
 fishing	Fullmoon Sardine	34	La Noscea	Eastern La Noscea		35, 29	6pm-6am		ocean			
-fishing	Silver Shark	41	La Noscea	Eastern La Noscea		15, 15			ocean			Mooch Merithor Goby to catch Silver Shark
+fishing	Silver Shark	41	La Noscea	Eastern La Noscea		35, 29			ocean			Mooch Merithor Goby to catch Silver Shark
 harvesting	Midland Basil	35	La Noscea	Eastern La Noscea		27, 30						
 harvesting	Mandrake	35	La Noscea	Eastern La Noscea		27, 30						
 harvesting	Salt Leek	35	La Noscea	Eastern La Noscea		27, 30						
@@ -136,13 +136,13 @@ harvesting	Pixie Plums	25	La Noscea	Upper La Noscea		14, 25
 harvesting	Chamomile	25	La Noscea	Upper La Noscea		14, 25						
 harvesting	Noble Grapes	25	La Noscea	Upper La Noscea		14, 24						
 harvesting	Sticky Rice	25	La Noscea	Upper La Noscea		13, 25						
-harvesting	Black Scorpion	45	La Noscea	Upper La Noscea		35, 25						
-harvesting	Dart Frog	45	La Noscea	Upper La Noscea		35, 25						
+harvesting	Black Scorpion	45	La Noscea	Upper La Noscea		34, 24						
+harvesting	Dart Frog	45	La Noscea	Upper La Noscea		34, 24						
 harvesting	Sagolii Sage	45	La Noscea	Upper La Noscea		34, 24						
 harvesting	Rolanbery	45	La Noscea	Upper La Noscea		34, 24						
 mining	Electrum Ore	45	La Noscea	Upper La Noscea		30, 25						
 mining	Raw Turquoise	45	La Noscea	Upper La Noscea		30, 25						
-quarrying	Lightning Rock	25	La Noscea	Upper La Noscea		13, 26						
+quarrying	Lightning Rock	25	La Noscea	Upper La Noscea		13, 23						
 quarrying	Fire Rock	25	La Noscea	Upper La Noscea		13, 23						
 quarrying	Water Rock	25	La Noscea	Upper La Noscea		13, 23						
 quarrying	Siltstone	30	La Noscea	Upper La Noscea		13, 26						
@@ -217,7 +217,7 @@ hunting	Orobon Liver	31	Thanalan	Southern Thanalan		18, 31		Dune Angler
 hunting	Cactuar Needle	25-27	Thanalan	Southern Thanalan		13, 14		Sabotender				
 hunting	Sandworm Fang	31-32	Thanalan	Southern Thanalan		13, 34		Sandworm				
 mining	Mythril Ore	35	Thanalan	Southern Thanalan		25, 40						
-mining	Raw Heliodor	35	Thanalan	Southern Thanalan		26, 41						
+mining	Raw Heliodor	35	Thanalan	Southern Thanalan		25, 40						
 mining	Little Worm	35	Thanalan	Southern Thanalan		25, 40						
 quarrying	Bomb Ash	30	Thanalan	Southern Thanalan		22, 30						
 quarrying	Silex	30	Thanalan	Southern Thanalan		23, 30						
@@ -255,7 +255,7 @@ harvesting	Marjoram	15	The Black Shroud	Central Shroud		19, 19
 harvesting	Tree Toad	15	The Black Shroud	Central Shroud		19, 20						
 harvesting	Buffalo Beans	15	The Black Shroud	Central Shroud		19, 20						
 hunting	Imp Wing	9	The Black Shroud	Central Shroud		26, 26		Trickster Imp				
-hunting	Morbol Vine	31	The Black Shroud	Central Shroud		15, 21		Halitostroper				
+hunting	Morbol Vine	31	The Black Shroud	Central Shroud		13, 22		Stroper				
 hunting	Red Landtrap Leaf	10-13	The Black Shroud	Central Shroud		20, 31		Roselet				
 hunting	Viscous Secretions	11-14	The Black Shroud	Central Shroud		15, 25		Tree Slug				
 hunting	Shriekshroom	3-4	The Black Shroud	Central Shroud		23, 18		Forest Fungar				
@@ -327,14 +327,14 @@ logging	Chocobo Feather	30	The Black Shroud	South Shroud		26, 19
 logging	Alligator Pear	30	The Black Shroud	South Shroud		26, 19						
 logging	Oak Branch	35	The Black Shroud	South Shroud		17, 30						
 logging	Oak Log	35	The Black Shroud	South Shroud		17, 30						
-logging	Tarantula	35	The Black Shroud	South Shroud		18, 30						
+logging	Tarantula	35	The Black Shroud	South Shroud		17, 30						
 mining	Effervescent Water	25	The Black Shroud	South Shroud		16, 20						
 mining	Silver Ore	25	The Black Shroud	South Shroud		16, 20						
 mining	Black Alumen	40	The Black Shroud	South Shroud		29, 22						
 mining	Raw Spinel	40	The Black Shroud	South Shroud		29, 22						
 mining	Raw Tourmaline	40	The Black Shroud	South Shroud		29, 23						
-quarrying	Silver Sand	25	The Black Shroud	South Shroud		23, 22						
-quarrying	Earth Rock	25	The Black Shroud	South Shroud		22, 22						
+quarrying	Silver Sand	25	The Black Shroud	South Shroud		23, 21						
+quarrying	Earth Rock	25	The Black Shroud	South Shroud		23, 21						
 quarrying	Ice Rock	25	The Black Shroud	South Shroud		23, 21						
 quarrying	Wind Rock	25	The Black Shroud	South Shroud		23, 21						
 other	Faded Copy of The Only Path	50	Treasure Map									Dragonskin Treasure Map, Goatskin Treasure Map, Leather Buried Treasure Map, Leather Treasure Map, Peisteskin Treasure Map, Wyvernskin Treasure Map
