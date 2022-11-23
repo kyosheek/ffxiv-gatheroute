@@ -146,6 +146,7 @@ export default {
                         <br/>
                         {{ item.action }}
                         <template v-if="item.note && item.note.length > 0">
+                            <br/>
                             <i>{{ item.note }}</i>
                         </template>
                     </p>
