@@ -161,7 +161,7 @@ hunting	Dodo Egg	14	La Noscea	Western La Noscea		33, 28		Wild Dodo
 mining	Sunrise Tellin	20	La Noscea	Western La Noscea		29, 23						
 mining	Raw Danburite	20	La Noscea	Western La Noscea		28, 23						
 quarrying	Mudstone	20	La Noscea	Western La Noscea		25, 24						
-quarrying	Limestone	20	La Noscea	Western La Noscea		26, 24						
+quarrying	Limestone	20	La Noscea	Western La Noscea		25, 24						
 buying	Faded Copy of Another Round	1	Mor Dhona	Mor Dhona		23, 7		Auriana				500 Allagan Tomestone of Poetics
 hunting	Eft Tail	45	Mor Dhona	Mor Dhona		12, 11		Mudpuppy family				
 hunting	Hippogryph Skin	46	Mor Dhona	Mor Dhona		27, 8		Hippogryph				
@@ -180,7 +180,7 @@ mining	Wind Shard	5	Thanalan	Central Thanalan		19, 26
 mining	Lightning Shard	5	Thanalan	Central Thanalan		19, 26						
 quarrying	Ragstone	15	Thanalan	Central Thanalan		15, 22						
 quarrying	Rock Salt	15	Thanalan	Central Thanalan		15, 22						
-quarrying	Fine Sand	15	Thanalan	Central Thanalan		15, 21						
+quarrying	Fine Sand	15	Thanalan	Central Thanalan		15, 22						
 buying	Blue Cheese	1	Thanalan	Eastern Thanalan		14, 25		Shopkeep				
 fishing	Loyal Pleco	42	Thanalan	Eastern Thanalan		21, 21			freshwater			
 harvesting	Popoto	20	Thanalan	Eastern Thanalan		16, 27						
@@ -295,7 +295,7 @@ harvesting	Wizard Eggplant	30	The Black Shroud	North Shroud		23, 26
 harvesting	Moor Leech	30	The Black Shroud	North Shroud		24, 26						
 harvesting	Jade Peas	30	The Black Shroud	North Shroud		23, 26						
 harvesting	Midland Cabbage	30	The Black Shroud	North Shroud		23, 26						
-hunting	Yellow Yarzon Leg	26	The Black Shroud	North Shroud		21, 31						
+hunting	Yellow Yarzon Leg	26	The Black Shroud	North Shroud		21, 31		Yarzon Scavenger				
 hunting	Diremite Sinew	25-27	The Black Shroud	North Shroud		16, 27		Banemite family				
 hunting	Diremite Web	25-27, 29	The Black Shroud	North Shroud		16, 27		Banemite family				
 hunting	Acidic Secretions	25-28	The Black Shroud	North Shroud		21, 30		Shroud Hare				
