@@ -48,79 +48,88 @@ export default {
             return this.route[this.region][this.location].map(item => {
 
                 let action;
-                switch(item.profession)
+
+                if (item.aetheryte)
                 {
-                    case 'hunting':
-                        action = `[DoW/DoM] Kill lv${item.lv} ${item.npc} for`;
-                        break;
-                    case 'mining':
-                        action = `[Miner] Mine lv${item.lv} nodes for`;
-                        break;
-                    case 'quarrying':
-                        action = `[Miner] Quarry lv${item.lv} nodes for`;
-                        break;
-                    case 'logging':
-                        action = `[Botanist] Log lv${item.lv} nodes for`;
-                        break;
-                    case 'harvesting':
-                        action = `[Botanist] Harvest lv${item.lv} nodes for`;
-                        break;
-                    case 'fishing':
-                        action = `[Fisher] Fish for ${item.quantity} lv${item.lv} ${item.name} fish at (${item.x}, ${item.y}) with ${item.bait} bait`;
-                        break;
-                    case 'buying':
-                        action = `[Any] Buy ${item.quantity} ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
-                        break;
-                    case 'other':
-                        switch (item.region)
+                    action = `TP to ${item.name}`;
+                }
+                else
+                {
+                    switch(item.profession)
+                    {
+                        case 'hunting':
+                            action = `[DoW/DoM] Kill lv${item.lv} ${item.npc} for`;
+                            break;
+                        case 'mining':
+                            action = `[Miner] Mine lv${item.lv} nodes for`;
+                            break;
+                        case 'quarrying':
+                            action = `[Miner] Quarry lv${item.lv} nodes for`;
+                            break;
+                        case 'logging':
+                            action = `[Botanist] Log lv${item.lv} nodes for`;
+                            break;
+                        case 'harvesting':
+                            action = `[Botanist] Harvest lv${item.lv} nodes for`;
+                            break;
+                        case 'fishing':
+                            action = `[Fisher] Fish for ${item.quantity} lv${item.lv} ${item.name} fish at (${item.x}, ${item.y}) with ${item.bait} bait`;
+                            break;
+                        case 'buying':
+                            action = `[Any] Buy ${item.quantity} ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
+                            break;
+                        case 'other':
+                            switch (item.region)
+                            {
+                                case 'Dungeon':
+                                    action = `Run ${item.location} for ${item.quantity} ${item.name}`;
+                                    break;
+                                case 'Voyage':
+                                    action = `Complete ${item.location} for ${item.quantity} ${item.name}`;
+                                    break;
+                                case 'Treasure Map':
+                                    action = `Obtain ${item.quantity} ${item.name} from following treasure maps:`;
+                                    break;
+                                default:
+                                    action = `No switch case for region (${item.region}). Please report a bug`;
+                                    break;
+                            }
+                            break;
+                        default:
+                            action = 'No switch case for profession / Please report a bug';
+                            break;
+                    }
+
+                    if (item.profession !== 'buying' && item.profession !== 'fishing' && item.profession !== 'other')
+                    {
+                        action += ` ${item.quantity} ${item.name} at (${item.x}, ${item.y})`;
+                        const time = item.time;
+                        if (time.length > 0)
                         {
-                            case 'Dungeon':
-                                action = `Run ${item.location} for ${item.quantity} ${item.name}`;
-                                break;
-                            case 'Voyage':
-                                action = `Complete ${item.location} for ${item.quantity} ${item.name}`;
-                                break;
-                            case 'Treasure Map':
-                                action = `Obtain ${item.quantity} ${item.name} from following treasure maps:`;
-                                break;
-                            default:
-                                action = `No switch case for region (${item.region}). Please report a bug`;
-                                break;
+                            action += ` at ${time} (Eorzea time)`;
                         }
-                        break;
-                    default:
-                        action = 'No switch case for profession / Please report a bug';
-                        break;
+                    }
+
+                    if (item.profession === 'fishing')
+                    {
+                        const weather = item.weather,
+                            time = item.time,
+                            special = item.special;
+                        if (weather.length > 0)
+                        {
+                            action += ` in ${weather} weather`;
+                        }
+                        if (time.length > 0)
+                        {
+                            action += ` at ${time} (Eorzea time)`;
+                        }
+                        if (special.length > 0)
+                        {
+                            action += ` (with ${special} condition)`
+                        }
+                    }
                 }
 
-                if (item.profession !== 'buying' && item.profession !== 'fishing' && item.profession !== 'other')
-                {
-                    action += ` ${item.quantity} ${item.name} at (${item.x}, ${item.y})`;
-                    const time = item.time;
-                    if (time.length > 0)
-                    {
-                        action += ` at ${time} (Eorzea time)`;
-                    }
-                }
-
-                if (item.profession === 'fishing')
-                {
-                    const weather = item.weather,
-                        time = item.time,
-                        special = item.special;
-                    if (weather.length > 0)
-                    {
-                        action += ` in ${weather} weather`;
-                    }
-                    if (time.length > 0)
-                    {
-                        action += ` at ${time} (Eorzea time)`;
-                    }
-                    if (special.length > 0)
-                    {
-                        action += ` (with ${special} condition)`
-                    }
-                }
                 item.action = action;
                 return item;
             });

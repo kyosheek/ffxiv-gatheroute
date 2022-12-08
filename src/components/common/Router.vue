@@ -11,6 +11,11 @@ const props = defineProps({
        type: Array,
        default() { return []; }
     },
+    aetherytes: {
+
+        type: Array,
+        default() { return []; }
+    },
     toGather: {
 
        type: Object,
@@ -75,6 +80,48 @@ const materialsToGatherByRegionsAndLocations = computed(() => {
     return items;
 });
 
+const aetherytesByRegionsAndLocations = computed(() => {
+
+    const items = {};
+    const regions = [...new Set(props.aetherytes.map(el => el.region))];
+    for (let region of regions)
+    {
+        items[region] = {};
+
+        const locations = [...new Set(props.aetherytes.filter(el => el.region === region).map(el => el.location))];
+
+        for (let location of locations)
+        {
+            items[region][location] = props.aetherytes.filter(el => el.region === region && el.location === location).map(el => {
+
+                el.aetheryte = true;
+                const splitRoute = el.coordinates.split(';');
+                if (splitRoute.length > 0)
+                {
+                    const coordinates = splitRoute[0].split(',');
+                    if (coordinates.length === 0)
+                    {
+                        el.x = NaN;
+                        el.y = NaN;
+                    }
+                    else
+                    {
+                        el.x = parseFloat(coordinates[0]);
+                        el.y = parseFloat(coordinates[1]);
+                    }
+                }
+                else
+                {
+                    el.x = NaN;
+                    el.y = NaN;
+                }
+                return el;
+            });
+        }
+    }
+    return items;
+});
+
 const hasItemsToGather = computed(() => Object.keys(props.toGather).length > 0);
 
 const routeRegions = computed(() => Object.keys(route.value).sort());
@@ -104,19 +151,37 @@ const solveTravelingSalesmanProblem = () =>
 {
     const resultItems = Object.assign({}, materialsToGatherByRegionsAndLocations.value);
 
-    for(const region in resultItems)
+    for (const region in resultItems)
     {
         for (const location in resultItems[region])
         {
             const items = resultItems[region][location];
-            if (items.length > 2)
+            const aetherytes = aetherytesByRegionsAndLocations.value[region][location];
+
+            let optimalRouteLength = Infinity;
+
+            if (aetherytes.length > 0)
             {
-                let optimalRouteLength = Infinity;
+                aetherytes.forEach(aetheryte => {
+
+                    const newRoute = bruteTSP(aetheryte, [].concat(items));
+                    const newRouteLength = calcRouteLength(newRoute);
+
+                    if (newRouteLength < optimalRouteLength)
+                    {
+                        optimalRouteLength = newRouteLength;
+                        resultItems[region][location] = newRoute;
+                    }
+                });
+            }
+            else
+            {
                 const itemsCopy = [].concat(items);
                 itemsCopy.forEach((node, idx) => {
 
                     const newRoute = bruteTSP(itemsCopy[idx], itemsCopy.slice(0, idx).concat(itemsCopy.slice(idx + 1, itemsCopy.length)));
                     const newRouteLength = calcRouteLength(newRoute);
+
                     if (newRouteLength < optimalRouteLength)
                     {
                         optimalRouteLength = newRouteLength;
@@ -166,6 +231,7 @@ const bruteTSP = (startingNode, nodes, result = []) =>
     });
 
     const newStartingNode = nodes.splice(minDistanceIndex, 1)[0];
+
     return bruteTSP(newStartingNode, nodes, result);
 };
 

@@ -7,6 +7,7 @@ import Router from "../components/common/Router.vue";
 import Selector from "../components/common/Selector.vue";
 
 let materials = ref([]);
+let aetherytes = ref([]);
 const toGather = ref({});
 
 let err = ref(null);
@@ -14,24 +15,27 @@ let isLoading = ref(true);
 
 onBeforeMount(() => {
 
-    fetch('assets/data/materials.tsv')
-        .then(response => {
+    const fetchMaterials = fetch('assets/data/materials.tsv')
+        .then(response =>
+        {
             err = null;
             return response.text();
         })
         .then(text => tsvParse(text))
-        .then(data =>
+        .then(data => materials.value = data.sort());
+
+    const fetchAetherytes = fetch('assets/data/aetherytes.tsv')
+        .then(response =>
         {
-            materials.value = data.sort();
+            err = null;
+            return response.text();
         })
-        .catch(err =>
-        {
-            err.value = JSON.stringify(err, null, 2);
-        })
-        .finally(() =>
-        {
-            isLoading.value = false;
-        });
+        .then(text => tsvParse(text))
+        .then(data => aetherytes.value = data.sort());
+
+    Promise.all([ fetchMaterials, fetchAetherytes ])
+        .catch(err => err.value = JSON.stringify(err, null, 2))
+        .finally(() => isLoading.value = false);
 });
 
 const removeItemFromToGatherList = (name) => delete toGather.value[name];
@@ -43,7 +47,7 @@ const clearToGatherList = () => { for (let name in toGather.value) { delete toGa
 
     <template v-if="err">
 
-        <pre>{{ JSON.stringify(err, null, 2) }}</pre>
+        <pre>{{ err.value }}</pre>
 
     </template>
     <template v-else>
@@ -59,6 +63,7 @@ const clearToGatherList = () => { for (let name in toGather.value) { delete toGa
             <div class="materials-delimiter"></div>
 
             <Router :materials="materials"
+                    :aetherytes="aetherytes"
                     :to-gather="toGather" />
 
         </section>

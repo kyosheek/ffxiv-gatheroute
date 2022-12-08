@@ -119,7 +119,7 @@ const drawMap = () => {
 
             const arc = new Path2D();
 
-            if (item.profession === 'buying')
+            if (item.profession === 'buying' || item.aetheryte)
             {
                 arc.arc(x, y, 2, 0, 2 * Math.PI);
                 ctx.fill(arc);
