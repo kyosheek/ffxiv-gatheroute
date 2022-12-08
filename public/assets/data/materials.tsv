@@ -1,4 +1,16 @@
 profession	name	lv	region	location	quantity	coordinates	time	npc	bait	weather	special	note
+mining	Adamantite Ore	60	Abalathia's Spine	Azys Lla		24.1, 6.4	12am, 12pm					
+hunting	Dhalmel Hide	56	Abalathia's Spine	The Sea of Clouds		17, 32		Dhalmel				
+hunting	Dhalmel Saliva	56	Abalathia's Spine	The Sea of Clouds		17, 32		Dhalmel				
+logging	Birch Log	60	Abalathia's Spine	The Sea of Clouds		26.4, 33.6						hidden
+logging	Wind Widow	60	Abalathia's Spine	The Sea of Clouds		26.4, 33.6						
+logging	Birch Branch	60	Abalathia's Spine	The Sea of Clouds		26.4, 33.6						
+logging	Birch Sap	60	Abalathia's Spine	The Sea of Clouds		26.4, 33.6						
+logging	Cloud Mushroom	60	Abalathia's Spine	The Sea of Clouds		26.4, 33.6						
+logging	Abalathian Mistletoe	60	Abalathia's Spine	The Sea of Clouds		34, 19.1	6am, 6pm					
+logging	Heavens Lemon	60	Abalathia's Spine	The Sea of Clouds		34, 19.1	6am, 6pm					
+mining	Abalathian Spring Water	60	Abalathia's Spine	The Sea of Clouds		34.9, 30.6						
+mining	Aurum Regis Sand	60	Abalathia's Spine	The Sea of Clouds		34.9, 30.6						
 fishing	Northern Pike	45	Coerthas	Coerthas Central Highlands		6, 22			freshwater			
 fishing	Cloud Cutter	48	Coerthas	Coerthas Central Highlands		13, 15			skyfishing			
 hunting	Fleece	35	Coerthas	Coerthas Central Highlands		27, 20		Ornery Caracul				
@@ -6,13 +18,58 @@ hunting	Wolf Fang	35-37, 46, 48	Coerthas	Coerthas Central Highlands		"31, 18; 12
 hunting	Karakul Skin	35-39	Coerthas	Coerthas Central Highlands		21, 16		Ornery Caracul				
 logging	Mirror Apple	45	Coerthas	Coerthas Central Highlands		23, 18						
 logging	Mistletoe	45	Coerthas	Coerthas Central Highlands		23, 18						
+logging	Spruce Log	50	Coerthas	Coerthas Central Highlands		29.1, 12.9	9am					
 mining	Jade	40	Coerthas	Coerthas Central Highlands		24, 20						
 mining	Raw Zircon	40	Coerthas	Coerthas Central Highlands		24, 20						
+mining	Darksteel Ore	50	Coerthas	Coerthas Central Highlands		27.5, 20.1	1am					
+harvesting	Chysahl Greens	60	Coerthas	Coerthas Western Highlands		9.2, 10.6	8am, 8pm					
+harvesting	Rue	60	Coerthas	Coerthas Western Highlands		14, 15.3						
+harvesting	Coriander	60	Coerthas	Coerthas Western Highlands		14, 15.3						
+harvesting	Whitefrost Cotton Boll	60	Coerthas	Coerthas Western Highlands		14, 15.3						
+hunting	Deepeye Tears	50	Coerthas	Coerthas Western Highlands		31.5, 31.5		Deepeye				
+hunting	Gelato Flesh	51	Coerthas	Coerthas Western Highlands		11, 17		Gelato				
+mining	Yellow Copper Ore	50	Coerthas	Coerthas Western Highlands		29.1, 28.3						
+mining	Dragon Obsidian	50	Coerthas	Coerthas Western Highlands		29.1, 28.3						
+mining	Raw Mormorion	55	Coerthas	Coerthas Western Highlands		31, 13						
+mining	Raw Larimar	55	Coerthas	Coerthas Western Highlands		31, 13						
+mining	Mythrite Ore	55	Coerthas	Coerthas Western Highlands		31, 13						hidden
+quarrying	Mythrite Sand	55	Coerthas	Coerthas Western Highlands		16.6, 12.9						
+quarrying	Green Quartz	55	Coerthas	Coerthas Western Highlands		16.6, 12.9						
+quarrying	Yellow Quartz	55	Coerthas	Coerthas Western Highlands		16.6, 12.9						
+harvesting	Emerald Beans	55	Dravania	The Churning Mists		22.2, 22.5						hidden
+harvesting	Magma Beet	55	Dravania	The Churning Mists		22.2, 22.5						
+hunting	Dragon Skin	54	Dravania	The Churning Mists		22, 24		Moss Dragon				
+hunting	Amphiptere Skin	54	Dravania	The Churning Mists		11.3, 31.8		Amphiptere				
+quarrying	Hardsilver Sand	60	Dravania	The Churning Mists		28, 19						
+quarrying	Cloud Mica	60	Dravania	The Churning Mists		28, 19						
+quarrying	Tektite	60	Dravania	The Churning Mists		28, 19						
+quarrying	Lumythrite Sand	60	Dravania	The Churning Mists		28, 19						
+quarrying	Fossilized Dragon Bone	60	Dravania	The Churning Mists		28, 19						
 buying	Vath Stickpeddler	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
 buying	Pahsana Fruit	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
 buying	Tantaplant	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
 buying	Mimett Gourd	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
 buying	Curiel Root	1	Dravania	The Dravanian Forelands		23,6, 19		Vath Stickpeddler				
+harvesting	Stalk of Ramie	55	Dravania	The Dravanian Forelands		37.5, 19.5						
+harvesting	Cyclops Onions	55	Dravania	The Dravanian Forelands		37.5, 19.5						hidden
+harvesting	Highland Wheat	55	Dravania	The Dravanian Forelands		37.5, 19.5						
+hunting	Wyvern Wing	53	Dravania	The Dravanian Forelands		13, 36		Dravanian Wyvern				
+hunting	Bear Fat	49-52	Dravania	The Dravanian Forelands		27.6, 15.9		Brown Bear				
+logging	Dark Chestnut Log	55	Dravania	The Dravanian Forelands		28, 25.5						
+logging	Dark Chestnug	55	Dravania	The Dravanian Forelands		28, 25.5						hidden
+logging	Dark Chestnut Branch	55	Dravania	The Dravanian Forelands		28, 25.5						
+mining	Titanium Ore	55	Dravania	The Dravanian Forelands		30, 15						hidden
+mining	Raw Star Sapphire	55	Dravania	The Dravanian Forelands		30, 15						
+mining	Raw Star Ruby	55	Dravania	The Dravanian Forelands		30, 15						
+mining	Chalcocite	55	Dravania	The Dravanian Forelands		30, 15						
+mining	Pyrite	55	Dravania	The Dravanian Forelands		30, 15						
+hunting	Crawler Cocoon	58	Dravania	The Dravanian Hinterlands		12, 16		Crawler				
+mining	Hardsilver Ore	60	Dravania	The Dravanian Hinterlands		25.4, 24.6						hidden
+mining	Cuprite	60	Dravania	The Dravanian Hinterlands		25.4, 24.6						
+mining	Light Kidney Ore	60	Dravania	The Dravanian Hinterlands		25.4, 24.6						
+mining	Eventide Jade	60	Dravania	The Dravanian Hinterlands		25.4, 24.6						
+mining	Raw Chrysolite	60	Dravania	The Dravanian Hinterlands		25.4, 24.6						
+mining	Wyrm Obsidian	60	Dravania	The Dravanian Hinterlands		25.4, 24.6						
 other	Faded Copy of The Dark's Embrace	50	Dungeon	Copperbell Mines (Hard)								
 other	Faded Copy of Riptide	50	Dungeon	Sastasha (Hard)								
 other	Mossy Horn	47	Dungeon	The Aurum Vale								In a chest before second boss (Coincounter)
@@ -50,6 +107,7 @@ logging	Nutmeg	40	La Noscea	Eastern La Noscea		19, 26
 mining	Raw Garnet	35	La Noscea	Eastern La Noscea		29, 27						
 mining	Raw Goshenite	35	La Noscea	Eastern La Noscea		29, 27						
 mining	Raw Aquamarine	35	La Noscea	Eastern La Noscea		29, 27						
+quarrying	Volcanic Rock Salt	50	La Noscea	Eastern La Noscea		18, 34	5pm					
 buying	Buffalo Milk	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
 buying	Mineral Water	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
 buying	Sour Red	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
@@ -62,12 +120,18 @@ buying	Chicken Breast	1	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand
 buying	Gysahi Greens	1	La Noscea	Limsa Lominsa Lower Decks		10, 11		Bango Zango				
 fishing	Lominsan Anchovy	1	La Noscea	Limsa Lominsa Lower Decks		10, 9			ocean			
 fishing	Coral Butterfly	10	La Noscea	Limsa Lominsa Lower Decks		7, 12			ocean			
-logging	Cock Feather	0	La Noscea	Limsa Lominsa Lower Decks		9, 12		Engerrand				
 buying	Tiny Crown	0	La Noscea	Limsa Lominsa Upper Decks		10, 8		Jossy				
-buying	Pudding Flesh	0	La Noscea	Limsa Lominsa Upper Decks		13, 13		Storm Quartermaster				200 seals
-buying	Potash	1	La Noscea	Limsa Lominsa Upper Decks		13, 13		Storm Quartermaster				200 seals
+buying	Pudding Flesh	0	La Noscea	Limsa Lominsa Upper Decks		13.1, 12.7		Storm Quartermaster				200 seals
+buying	Potash	1	La Noscea	Limsa Lominsa Upper Decks		13.1, 12.7		Storm Quartermaster				200 seals
 buying	Haddock	1	La Noscea	Limsa Lominsa Upper Decks		10, 14		Holasfhis				
 buying	Finger Shrimp	1	La Noscea	Limsa Lominsa Upper Decks		10, 14		Holasfhis				
+buying	Aqueous Whetstone	1	La Noscea	Limsa Lominsa Upper Decks		13.1, 12.7		Storm Quartermaster				200 seals
+buying	Hardened Sap	1	La Noscea	Limsa Lominsa Upper Decks		13.1, 12.7		Storm Quartermaster				200 seals
+buying	Coke	1	La Noscea	Limsa Lominsa Upper Decks		13.1, 12.7		Storm Quartermaster				200 seals
+buying	Peacock Ore	1	La Noscea	Limsa Lominsa Upper Decks		13.1, 12.7		Storm Quartermaster				200 seals
+buying	Animal Fat	1	La Noscea	Limsa Lominsa Upper Decks		13.1, 12.7		Storm Quartermaster				200 seals
+buying	Lime Sulphur	1	La Noscea	Limsa Lominsa Upper Decks		13.1, 12.7		Storm Quartermaster				200 seals
+buying	Cooking Sherry	1	La Noscea	Limsa Lominsa Upper Decks		13.1, 12.7		Storm Quartermaster				20 seals
 fishing	Tiger Cod	10	La Noscea	Lower La Noscea		20, 38			ocean			
 fishing	Rothlyt Oyster	10	La Noscea	Lower La Noscea		20, 38			ocean			
 fishing	Crimson Crayfish	15	La Noscea	Lower La Noscea		21, 34			freshwater			
@@ -101,6 +165,7 @@ hunting	Puk Egg	30	La Noscea	Outer La Noscea		15, 19		Pteroc
 hunting	Raptor Sinew	34	La Noscea	Outer La Noscea		20, 16		Velociraptor				
 hunting	Raptor Skin	34	La Noscea	Outer La Noscea		20, 16		Velociraptor				
 hunting	Raptor Shank	34	La Noscea	Outer La Noscea		20, 16		Velociraptor				
+hunting	Coeurl Meat	31, 34	La Noscea	Outer La Noscea		14, 14		Coeurl				
 buying	Brittle Picatrix	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
 buying	Worm-eaten Square Shield	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
 buying	Blunt Goblin Scimitar	1	La Noscea	Upper La Noscea		15, 24		Junkmonger				
@@ -162,17 +227,23 @@ mining	Sunrise Tellin	20	La Noscea	Western La Noscea		29, 23
 mining	Raw Danburite	20	La Noscea	Western La Noscea		28, 23						
 quarrying	Mudstone	20	La Noscea	Western La Noscea		25, 24						
 quarrying	Limestone	20	La Noscea	Western La Noscea		25, 24						
+quarrying	Ice Crystal	30	La Noscea	Western La Noscea		31.5, 28.3						
 buying	Faded Copy of Another Round	1	Mor Dhona	Mor Dhona		23, 7		Auriana				500 Allagan Tomestone of Poetics
 hunting	Eft Tail	45	Mor Dhona	Mor Dhona		12, 11		Mudpuppy family				
 hunting	Hippogryph Skin	46	Mor Dhona	Mor Dhona		27, 8		Hippogryph				
 hunting	Hippogryph Sinew	46	Mor Dhona	Mor Dhona		27, 8		Hippogryph				
 logging	Lightning Cluster	50	Mor Dhona	Mor Dhona		32, 11	1am, 5am, 9am					
+quarrying	Wind Cluster	50	Mor Dhona	Mor Dhona		28, 12	1pm, 5pm, 9pm					
+quarrying	Fire Cluster	50	Mor Dhona	Mor Dhona		28, 12	1pm, 5pm, 9pm					
+quarrying	Earth Cluster	50	Mor Dhona	Mor Dhona		28, 12	1pm, 5pm, 9pm					
+quarrying	Water Cluster	50	Mor Dhona	Mor Dhona		28, 12	1pm, 5pm, 9pm					
 fishing	Dark Bass	25	Thanalan	Central Thanalan		16, 23			freshwater			
 harvesting	Black Pepper	15	Thanalan	Central Thanalan		25, 21						
 harvesting	Yellow Ginseng	15	Thanalan	Central Thanalan		24, 19						
 harvesting	Alpine Parsnip	15	Thanalan	Central Thanalan		25, 21						
 hunting	Formic Acid	12	Thanalan	Central Thanalan		16, 15		Antling Sentry				
 hunting	Marmot Meat	1-2	Thanalan	Central Thanalan		19, 27		Star Marmot				
+logging	Cock Feather	10	Thanalan	Central Thanalan		22, 27						
 logging	Cloves	10	Thanalan	Central Thanalan		22, 27						
 logging	Nopales	20	Thanalan	Central Thanalan		21, 20						
 mining	Bone Chip	5	Thanalan	Central Thanalan		24, 27						
@@ -201,13 +272,14 @@ mining	Saltpeter	30	Thanalan	Eastern Thanalan		26, 17
 mining	Raw Amber	45	Thanalan	Eastern Thanalan		13, 19						
 mining	Raw Rubellite	45	Thanalan	Eastern Thanalan		13, 19						
 mining	Gold Ore	50	Thanalan	Eastern Thanalan		28, 22	9am-12am					
+quarrying	Fire Crystal	30	Thanalan	Eastern Thanalan		24.3, 19.5						
 hunting	Peiste Skin	49	Thanalan	Northern Thanalan		21, 25		Basilisk				
 hunting	Ahriman Wing	49	Thanalan	Northern Thanalan		24, 21		Ahriman				
 mining	Basilisk Egg	50	Thanalan	Northern Thanalan		23, 24						
 mining	Cobalt Ore	50	Thanalan	Northern Thanalan		23, 24						
 mining	Adamantoise Shell	50	Thanalan	Northern Thanalan		22, 25						
 mining	Ogre Horn	50	Thanalan	Northern Thanalan		22, 25						
-quarrying	Grenade Ash	40	Thanalan	Northern Thanalan		22, 28						
+quarrying	Grenade Ash	40	Thanalan	Northern Thanalan		21.5, 28.6						
 harvesting	Laurel	35	Thanalan	Southern Thanalan		20, 9						
 harvesting	Desert Saffron	35	Thanalan	Southern Thanalan		20, 9						
 harvesting	Yafaemi Wildgrass	35	Thanalan	Southern Thanalan		20, 9						
@@ -243,10 +315,11 @@ mining	Tin Ore	10	Thanalan	Western Thanalan		22, 29
 mining	Obsidian	10	Thanalan	Western Thanalan		22, 29						
 mining	Soiled Femur	10	Thanalan	Western Thanalan		22, 29						
 mining	Zinc Ore	10	Thanalan	Western Thanalan		22, 29						
-mining	Iron Ore	15	Thanalan	Western Thanalan		27, 17						
+mining	Iron Ore	15	Thanalan	Western Thanalan		27.1, 17.1						
 quarrying	Cinnabar	15	Thanalan	Western Thanalan		24, 19						
 quarrying	Iron Sand	15	Thanalan	Western Thanalan		24, 19						
 quarrying	Copper Sand	15	Thanalan	Western Thanalan		24, 19						
+quarrying	Water Crystal	30	Thanalan	Western Thanalan		23.4, 23.2						
 harvesting	Cotton Boll	15	The Black Shroud	Central Shroud		22, 24						
 harvesting	Lavender	15	The Black Shroud	Central Shroud		22, 24						
 harvesting	Carnation	15	The Black Shroud	Central Shroud		23, 23						
@@ -276,6 +349,8 @@ mining	Granite	35	The Black Shroud	Central Shroud		14, 22
 harvesting	Belladonna	20	The Black Shroud	East Shroud		19, 28						
 harvesting	Gil Bun	20	The Black Shroud	East Shroud		19, 28						
 harvesting	Galago Mint	20	The Black Shroud	East Shroud		19, 28						
+harvesting	Silkworm Cocoon	50	The Black Shroud	East Shroud		22, 26	1am					
+harvesting	Trillium Bulb	50	The Black Shroud	East Shroud		13, 23	9pm					
 hunting	Treant Sap	21	The Black Shroud	East Shroud		15, 24		Diseased Treant				
 hunting	Scalekin Blood	24	The Black Shroud	East Shroud		16, 20		Jumping Djigga				
 hunting	Ochu Vine	48	The Black Shroud	East Shroud		23, 18		Milkroot Claster				
@@ -328,8 +403,8 @@ logging	Alligator Pear	30	The Black Shroud	South Shroud		26, 19
 logging	Oak Branch	35	The Black Shroud	South Shroud		17, 30						
 logging	Oak Log	35	The Black Shroud	South Shroud		17, 30						
 logging	Tarantula	35	The Black Shroud	South Shroud		17, 30						
-mining	Effervescent Water	25	The Black Shroud	South Shroud		16, 20						
-mining	Silver Ore	25	The Black Shroud	South Shroud		16, 20						
+mining	Effervescent Water	25	The Black Shroud	South Shroud		16.3, 19.8						
+mining	Silver Ore	25	The Black Shroud	South Shroud		16.3, 19.8						
 mining	Black Alumen	40	The Black Shroud	South Shroud		29, 22						
 mining	Raw Spinel	40	The Black Shroud	South Shroud		29, 22						
 mining	Raw Tourmaline	40	The Black Shroud	South Shroud		29, 23						
