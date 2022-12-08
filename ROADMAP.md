@@ -21,7 +21,7 @@
 
 ## UX
 - [ ] Regenerate route on item list changes
-- [ ] Improve adding, removing and editing selected items to gather
+- [x] Improve adding, removing and editing selected items to gather
 - [x] Auto-fill search (datalist) \[Thanks to u/FrankTheWallaby on Reddit\]
 - [ ] Integration with Garlandtools/Teamcraft \[Multiple requests on Reddit\]
 
