@@ -38,14 +38,19 @@ body
 
 #app
 {
-    padding: 10px;
+
+}
+
+main
+{
+    padding: 0.5rem;
 }
 
 header
 {
     background-color: black;
     color: white;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .is-loading
@@ -287,20 +292,21 @@ hr
     background-color: var(--c-3);
 }
 
+footer, header, main
+{
+    padding: 0.5rem 2rem;
+}
+
 footer
 {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
 
-    margin-top: auto;
-
-    padding: 3rem 1.5rem;
     background-color: black;
 
     color: white;
 
-    text-align: center;
+    text-align: left;
 
     & a, & a:visited
     {
@@ -308,7 +314,7 @@ footer
     }
 }
 
-nav ul li, .ul--inline li
+nav ul li, .ul_inline li
 {
     display: inline-block;
 }
@@ -328,18 +334,11 @@ nav ul li
     }
 }
 
-.ul--inline li
+.ul_inline li
 {
     &:not(:last-child)
     {
-        &::after
-        {
-            position: relative;
-            margin-left: 0.5em;
-            content: "x";
-            vertical-align: middle;
-            display: inline-block;
-        }
+        margin-right: 1rem;
     }
 }
 

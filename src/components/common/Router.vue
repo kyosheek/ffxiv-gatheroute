@@ -1,8 +1,8 @@
 <script setup>
 import { ref, computed } from "vue";
 
-import Stepper from "./Stepper.vue";
-import Map from "./Map.vue";
+import Stepper from "../materials/Stepper.vue";
+import Map from "../materials/Map.vue";
 
 const props = defineProps({
 

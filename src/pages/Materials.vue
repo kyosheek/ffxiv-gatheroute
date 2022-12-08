@@ -3,8 +3,8 @@ import { onBeforeMount, ref } from "vue";
 
 import { tsvParse } from "d3-dsv";
 
-import Router from "../components/Router.vue";
-import Selector from "../components/Selector.vue";
+import Router from "../components/common/Router.vue";
+import Selector from "../components/common/Selector.vue";
 
 let materials = ref([]);
 const toGather = ref({});

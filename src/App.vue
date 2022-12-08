@@ -2,17 +2,26 @@
     import { ref } from "vue";
 
     import Materials from "./pages/Materials.vue";
+    import Footer from "./components/common/Footer.vue";
+    import Header
+        from "./components/common/Header.vue";
 
     let route = ref('materials');
 </script>
 
 <template>
 
-    <template v-if="route === 'materials'">
+    <Header />
 
-        <Materials />
+    <main>
+        <template v-if="route === 'materials'">
 
-    </template>
+            <Materials />
+
+        </template>
+    </main>
+
+    <Footer />
 
 </template>
 
