@@ -1,24 +1,26 @@
 <script setup>
     import { ref } from "vue";
 
-    import Materials from "./pages/Materials.vue";
+    import Header from "./components/common/Header.vue";
     import Footer from "./components/common/Footer.vue";
-    import Header
-        from "./components/common/Header.vue";
 
-    let route = ref('materials');
+    import Materials from "./pages/Materials.vue";
+
+    const componentsNamesMap = {
+        'materials': Materials
+    };
+
+    let currentComponentName = ref('materials');
+
+    const setComponentName = (componentName) => currentComponentName.value = componentName;
 </script>
 
 <template>
 
-    <Header />
+    <Header @set-component-name="setComponentName" />
 
     <main>
-        <template v-if="route === 'materials'">
-
-            <Materials />
-
-        </template>
+        <component :is="componentsNamesMap[currentComponentName]" />
     </main>
 
     <Footer />
