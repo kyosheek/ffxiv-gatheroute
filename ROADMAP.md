@@ -2,6 +2,7 @@
 
 ## Data
 - [ ] Hunting Log entries
+- [ ] Sightseeing Log (Vistas) entries
 
 ## Routing
 - [ ] Add multiple locations support
@@ -12,6 +13,7 @@
 ## Map
 - [ ] Improve precision
 - [ ] Improve redability
+- [ ] Add map sizes for each map
 
 ## UX
 - [ ] Regenerate route on item list changes
