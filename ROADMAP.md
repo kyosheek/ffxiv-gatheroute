@@ -7,12 +7,12 @@
 ## Routing
 - [ ] Add multiple locations support
 - [ ] Improve optimal route finding algorithm
-- [ ] Add support for starting point (Aetherytes) \[Thanks to u/FrankTheWallaby on Reddit\]
+- [x] Add support for starting point (Aetherytes) \[Thanks to u/FrankTheWallaby on Reddit\]
 - [ ] Fit timers into routing
 
 ## Map
-- [ ] Improve precision
-- [ ] Improve redability
+- [x] Improve precision
+- [ ] Improve readability
 - [ ] Add map sizes for each map
 
 ## UX
@@ -22,9 +22,10 @@
 - [ ] Integration with Garlandtools/Teamcraft \[Multiple requests on Reddit\]
 
 ## Design
-- [ ] Impove "look alike" feel
+- [ ] Improve "look alike" feel
 - [x] Better mobile support
 - [ ] Light/Dark/Auto mode
 
 ## Infrastructure
 - [ ] Move app to better hosting solution
+- [ ] Consider moving parts of code to SSR for better SEO
