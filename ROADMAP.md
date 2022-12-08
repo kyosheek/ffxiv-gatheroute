@@ -1,5 +1,9 @@
 # Roadmap
 
+## Codebase
+- [ ] Add SSR
+- [ ] Add proper routing
+
 ## Data
 - [ ] Hunting Log entries
 - [ ] Sightseeing Log (Vistas) entries
