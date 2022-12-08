@@ -1,5 +1,9 @@
 # Changelog
 
+## Dec 8, 2022
+
+- Updated materials table with all materials needed to craft items up to (excluding) ARR star recipes. 
+
 ## Nov 20, 2022
 ### QoL improvements
 
