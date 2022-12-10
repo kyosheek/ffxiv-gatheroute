@@ -165,8 +165,6 @@ const solveTravelingSalesmanProblem = () =>
             {
                 aetherytes.forEach(aetheryte => {
 
-                    console.log(items);
-
                     const newRoute = bruteTSP(aetheryte, [].concat(items));
                     const newRouteLength = calcRouteLength(newRoute);
 
