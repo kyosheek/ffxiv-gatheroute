@@ -156,13 +156,16 @@ const solveTravelingSalesmanProblem = () =>
         for (const location in resultItems[region])
         {
             const items = resultItems[region][location];
-            const aetherytes = aetherytesByRegionsAndLocations.value[region][location];
+
+            const aetherytes = aetherytesByRegionsAndLocations.value?.[region]?.[location] ?? [];
 
             let optimalRouteLength = Infinity;
 
             if (aetherytes.length > 0)
             {
                 aetherytes.forEach(aetheryte => {
+
+                    console.log(items);
 
                     const newRoute = bruteTSP(aetheryte, [].concat(items));
                     const newRouteLength = calcRouteLength(newRoute);
