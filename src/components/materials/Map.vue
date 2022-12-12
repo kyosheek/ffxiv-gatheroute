@@ -33,7 +33,6 @@ const dimensions = ref({
     bottom: 42
 });
 
-const context = ref(null);
 const mapImage = ref(null);
 const images = ref({});
 const isDrawing = ref(false);
@@ -64,11 +63,11 @@ const draw = () => {
         .finally(() => isDrawing.value = false)
 };
 
-const clearMap = () => context.value.clearRect(0, 0, dimensions.value.width, dimensions.value.height);
+const clearMap = () => map.value.getContext('2d').clearRect(0, 0, dimensions.value.width, dimensions.value.height);
 
 const drawMap = () => {
 
-    const ctx = context.value;
+    const ctx = map.value.getContext('2d');
     const d = dimensions.value;
 
     clearMap();
@@ -224,15 +223,11 @@ const resizeMap = () => {
         map.value.setAttribute('width', sideLength);
         map.value.setAttribute('height', sideLength);
 
-        ctx.value = map.value.getContext('2d');
-
         draw();
     }
 };
 
 onMounted(() => {
-
-    context.value = map.value.getContext('2d');
 
     var debounceTimeoutHandler;
     const resizeObserver = new ResizeObserver(() =>

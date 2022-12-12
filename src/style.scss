@@ -275,13 +275,13 @@ hr
 .materials-wrap
 {
     display: grid;
-    grid-template-columns: 1fr 2px 4fr;
-    grid-column-gap: 3rem;
+    grid-template-columns: max-content 2px auto 2px max-content;
+    grid-column-gap: 2rem;
 
     @media screen and (max-width: 800px)
     {
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 2px auto;
+        grid-template-rows: max-content 2px auto 2px max-content;
         grid-column-gap: 0;
         grid-row-gap: 1rem;
     }

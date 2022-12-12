@@ -27,49 +27,66 @@ const route = ref({});
 const currentRegionIndex = ref(null);
 const currentLocationIndex = ref(null);
 
-const materialsToGather = computed(() => {
+const filteredItems = computed(() => {
 
     const items = Object.keys(props.toGather);
-    const filteredItems = props.materials.filter(item => items.includes(item.name));
+    return props.materials.filter(item => items.includes(item.name));
+});
 
-    filteredItems.forEach(item => {
+const materialsToGather = computed(() => {
+
+    const items = filteredItems.value.filter(item => item.time.length === 0);
+
+    items.forEach(item => {
 
         item.quantity = props.toGather[item.name];
     });
-    return filteredItems;
+    return items;
+});
+
+const timeRestrictedMaterialsToGather = computed(() => {
+
+    const items = filteredItems.value.filter(item => item.time.length > 0);
+    items.forEach(item => {
+
+        item.quantity = props.toGather[item.name];
+    });
+    items.sort((a, b) => a.time.localeCompare(b.time));
+
+    return items;
 });
 
 const materialsToGatherByRegionsAndLocations = computed(() => {
 
     const items = {};
     const regions = [...new Set(materialsToGather.value.map(el => el.region))];
-    for (let region of regions)
-    {
+    for (let region of regions) {
+
         items[region] = {};
 
         const locations = [...new Set(materialsToGather.value.filter(el => el.region === region).map(el => el.location))];
 
-        for (let location of locations)
-        {
+        for (let location of locations) {
+
             items[region][location] = materialsToGather.value.filter(el => el.region === region && el.location === location).map(el => {
 
                 const splitRoute = el.coordinates.split(';');
-                if (splitRoute.length > 0)
-                {
+                if (splitRoute.length > 0) {
+
                     const coordinates = splitRoute[0].split(',');
-                    if (coordinates.length === 0)
-                    {
+                    if (coordinates.length === 0) {
+
                         el.x = NaN;
                         el.y = NaN;
                     }
-                    else
-                    {
+                    else {
+
                         el.x = parseFloat(coordinates[0]);
                         el.y = parseFloat(coordinates[1]);
                     }
                 }
-                else
-                {
+                else {
+
                     el.x = NaN;
                     el.y = NaN;
                 }
@@ -84,34 +101,34 @@ const aetherytesByRegionsAndLocations = computed(() => {
 
     const items = {};
     const regions = [...new Set(props.aetherytes.map(el => el.region))];
-    for (let region of regions)
-    {
+    for (let region of regions) {
+
         items[region] = {};
 
         const locations = [...new Set(props.aetherytes.filter(el => el.region === region).map(el => el.location))];
 
-        for (let location of locations)
-        {
+        for (let location of locations) {
+
             items[region][location] = props.aetherytes.filter(el => el.region === region && el.location === location).map(el => {
 
                 el.aetheryte = true;
                 const splitRoute = el.coordinates.split(';');
-                if (splitRoute.length > 0)
-                {
+                if (splitRoute.length > 0) {
+
                     const coordinates = splitRoute[0].split(',');
-                    if (coordinates.length === 0)
-                    {
+                    if (coordinates.length === 0) {
+
                         el.x = NaN;
                         el.y = NaN;
                     }
-                    else
-                    {
+                    else {
+
                         el.x = parseFloat(coordinates[0]);
                         el.y = parseFloat(coordinates[1]);
                     }
                 }
-                else
-                {
+                else  {
+
                     el.x = NaN;
                     el.y = NaN;
                 }
@@ -128,8 +145,9 @@ const routeRegions = computed(() => Object.keys(route.value).sort());
 
 const currentRegionLocations = computed(() => {
 
-    if (currentRegionIndex.value == null)
-    {
+    const hasRoute = Object.keys(route.value).length > 0;
+    if (currentRegionIndex.value == null || !hasRoute) {
+
         return [];
     }
 
@@ -147,15 +165,15 @@ const canSetPrevLoc = computed(() => {
     return currentLocationIndex.value > 0 || currentRegionIndex.value > 0;
 });
 
-const solveTravelingSalesmanProblem = () =>
-{
+const solveTravelingSalesmanProblem = () => {
+
     const resultItems = Object.assign({}, materialsToGatherByRegionsAndLocations.value);
 
     for (const region in resultItems)
     {
         for (const location in resultItems[region])
         {
-            const items = resultItems[region][location];
+            const items = resultItems[region][location].filter(item => !item.aetheryte);
 
             const aetherytes = aetherytesByRegionsAndLocations.value?.[region]?.[location] ?? [];
 
@@ -250,15 +268,19 @@ const calcRouteLength = (nodes) =>
     return len;
 };
 
-const initRouting = () => solveTravelingSalesmanProblem();
+const initRouting = () => {
+
+    route.value = {};
+    solveTravelingSalesmanProblem();
+}
 
 const setNextLoc = () => {
 
-    if (canSetNextLoc.value)
-    {
+    if (canSetNextLoc.value) {
+
         currentLocationIndex.value += 1;
-        if (currentLocationIndex.value >= currentRegionLocations.value.length)
-        {
+        if (currentLocationIndex.value >= currentRegionLocations.value.length) {
+
             currentLocationIndex.value = 0;
             currentRegionIndex.value += 1;
         }
@@ -267,11 +289,11 @@ const setNextLoc = () => {
 
 const setPrevLoc = () => {
 
-    if (canSetPrevLoc.value)
-    {
+    if (canSetPrevLoc.value) {
+
         currentLocationIndex.value -= 1;
-        if (currentLocationIndex.value < 0)
-        {
+        if (currentLocationIndex.value < 0) {
+
             currentRegionIndex.value -= 1;
             currentLocationIndex.value = currentRegionLocations.value.length - 1;
         }
@@ -305,6 +327,29 @@ const setPrevLoc = () => {
 
             </section>
         </section>
+
+    </article>
+
+    <div class="materials-delimiter"></div>
+
+    <article>
+
+        <h2>Time Restricted Materials</h2>
+
+            <section class="stepper__items">
+                <template v-for="item in timeRestrictedMaterialsToGather">
+                    <article class="item">
+                        <p>
+                            x{{ item.quantity }} <b>{{ item.name }}</b>
+                            <br/>
+                            <i>{{ item.region }}, {{ item.location }}</i>
+                            <br/>
+                            <br/>
+                            <b>{{ item.time }}</b> Eorzea Time
+                        </p>
+                    </article>
+                </template>
+            </section>
 
     </article>
 </template>
