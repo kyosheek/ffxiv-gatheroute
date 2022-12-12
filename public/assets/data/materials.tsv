@@ -1,7 +1,9 @@
 profession	name	lv	region	location	quantity	coordinates	time	npc	bait	weather	special	note
+hunting	Chimera Mane	59	Abalathia's Spine	Azys Lla		32, 7		Allagan Chimera				
 mining	Adamantite Ore	60	Abalathia's Spine	Azys Lla		24.1, 6.4	12am, 12pm					
 hunting	Dhalmel Hide	56	Abalathia's Spine	The Sea of Clouds		17, 32		Dhalmel				
 hunting	Dhalmel Saliva	56	Abalathia's Spine	The Sea of Clouds		17, 32		Dhalmel				
+hunting	Griffin Talon	59	Abalathia's Spine	The Sea of Clouds		6.1, 7.4		Griffin				
 logging	Birch Log	60	Abalathia's Spine	The Sea of Clouds		26.4, 33.6						hidden
 logging	Wind Widow	60	Abalathia's Spine	The Sea of Clouds		26.4, 33.6						
 logging	Birch Branch	60	Abalathia's Spine	The Sea of Clouds		26.4, 33.6						
@@ -43,6 +45,7 @@ mining	Mythrite Ore	55	Coerthas	Coerthas Western Highlands		31, 13						hidden
 quarrying	Mythrite Sand	55	Coerthas	Coerthas Western Highlands		16.6, 12.9						
 quarrying	Green Quartz	55	Coerthas	Coerthas Western Highlands		16.6, 12.9						
 quarrying	Yellow Quartz	55	Coerthas	Coerthas Western Highlands		16.6, 12.9						
+fishing	Gloaming Coral	58	Dravania	The Churning Mists		18, 39			cloud/skyfishing			Snagging required
 harvesting	Emerald Beans	55	Dravania	The Churning Mists		22.2, 22.5						hidden
 harvesting	Magma Beet	55	Dravania	The Churning Mists		22.2, 22.5						
 hunting	Dragon Skin	54	Dravania	The Churning Mists		22, 24		Moss Dragon				
