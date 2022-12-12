@@ -294,10 +294,10 @@ quarrying	Fire Crystal	30	Thanalan	Eastern Thanalan		24.3, 19.5
 quarrying	Red Pigment	30	Thanalan	Eastern Thanalan		24.3, 19.5						
 hunting	Peiste Skin	49	Thanalan	Northern Thanalan		21, 25		Basilisk				
 hunting	Ahriman Wing	49	Thanalan	Northern Thanalan		24, 21		Ahriman				
-mining	Basilisk Egg	50	Thanalan	Northern Thanalan		23,2 24.1						
-mining	Cobalt Ore	50	Thanalan	Northern Thanalan		23,2 24.1						
-mining	Adamantoise Shell	50	Thanalan	Northern Thanalan		23,2 24.1						
-mining	Ogre Horn	50	Thanalan	Northern Thanalan		23,2 24.1						
+mining	Basilisk Egg	50	Thanalan	Northern Thanalan		23.2, 24.1						
+mining	Cobalt Ore	50	Thanalan	Northern Thanalan		23.2, 24.1						
+mining	Adamantoise Shell	50	Thanalan	Northern Thanalan		23.2, 24.1						
+mining	Ogre Horn	50	Thanalan	Northern Thanalan		23.2, 24.1						
 quarrying	Grenade Ash	40	Thanalan	Northern Thanalan		21.5, 28.6						
 harvesting	Laurel	35	Thanalan	Southern Thanalan		20, 9						
 harvesting	Desert Saffron	35	Thanalan	Southern Thanalan		20, 9						
@@ -371,6 +371,7 @@ harvesting	Belladonna	20	The Black Shroud	East Shroud		19, 28
 harvesting	Gil Bun	20	The Black Shroud	East Shroud		19, 28						
 harvesting	Galago Mint	20	The Black Shroud	East Shroud		19, 28						
 harvesting	Silkworm Cocoon	50	The Black Shroud	East Shroud		22, 26	1am					
+harvesting	Mazlaya Greens	50	The Black Shroud	East Shroud		22, 26	1am					
 harvesting	Trillium Bulb	50	The Black Shroud	East Shroud		13, 23	9pm					
 hunting	Treant Sap	21	The Black Shroud	East Shroud		15, 24		Diseased Treant				
 hunting	Scalekin Blood	24	The Black Shroud	East Shroud		16, 20		Jumping Djigga				
