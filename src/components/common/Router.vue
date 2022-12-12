@@ -340,7 +340,7 @@ const setPrevLoc = () => {
                 <template v-for="item in timeRestrictedMaterialsToGather">
                     <article class="item">
                         <p>
-                            x{{ item.quantity }} <b>{{ item.name }}</b>
+                            x{{ item.quantity }} <b>{{ item.name }}</b> ({{ item.profession }})
                             <br/>
                             <i>{{ item.region }}, {{ item.location }}</i>
                             <br/>
