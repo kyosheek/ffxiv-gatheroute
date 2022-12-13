@@ -1,5 +1,7 @@
 <script setup>
-    import { ref } from "vue";
+    import { onBeforeMount, ref } from "vue";
+
+    import { inject } from '@vercel/analytics';
 
     import Header from "./components/common/Header.vue";
     import Footer from "./components/common/Footer.vue";
@@ -13,6 +15,8 @@
     let currentComponentName = ref('materials');
 
     const setComponentName = (componentName) => currentComponentName.value = componentName;
+
+    onBeforeMount(() => inject());
 </script>
 
 <template>
