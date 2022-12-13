@@ -118,7 +118,7 @@ input
         outline: none;
     }
 
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: 1100px)
     {
         padding: 15px 10px 10px 10px;
     }
@@ -145,7 +145,7 @@ select
         outline: none;
     }
 
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: 1100px)
     {
         padding: 15px 10px 10px 10px;
     }
@@ -178,7 +178,7 @@ button
         color: var(--c-2);
     }
 
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: 1100px)
     {
         padding: 10px 15px;
     }
@@ -186,7 +186,7 @@ button
 
 input, select, button
 {
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: 1100px)
     {
         font-size: 1.25em;
     }
@@ -207,7 +207,7 @@ hr
         grid-template-columns: 100%;
         grid-row-gap: 5px;
 
-        @media screen and (max-width: 800px)
+        @media screen and (max-width: 1100px)
         {
             display: flex;
             align-items: center;
@@ -234,7 +234,7 @@ hr
     {
         padding: 5px 10px;
 
-        @media screen and (max-width: 768px)
+        @media screen and (max-width: 110px)
         {
             max-width: 100%;
         }
@@ -249,7 +249,7 @@ hr
         grid-template-columns: max-content;
         grid-row-gap: 5px;
 
-        @media screen and (max-width: 800px)
+        @media screen and (max-width: 1100px)
         {
             grid-template-columns: 100%;
         }
@@ -275,10 +275,10 @@ hr
 .materials-wrap
 {
     display: grid;
-    grid-template-columns: max-content 2px auto 2px max-content;
-    grid-column-gap: 2rem;
+    grid-template-columns: 3fr 2px 10fr 2px 3fr;
+    grid-column-gap: 0.5rem;
 
-    @media screen and (max-width: 800px)
+    @media screen and (max-width: 1100px)
     {
         grid-template-columns: 100%;
         grid-template-rows: max-content 2px auto 2px max-content;
