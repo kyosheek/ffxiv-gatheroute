@@ -16,7 +16,10 @@
 
     const setComponentName = (componentName) => currentComponentName.value = componentName;
 
-    onBeforeMount(() => inject());
+    onBeforeMount(() => inject({
+
+        mode: (window.location.href.includes('localhost') || url.includes('127.0.0.1')) ? 'development' : 'production'
+    }));
 </script>
 
 <template>
