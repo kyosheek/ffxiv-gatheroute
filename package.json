@@ -10,6 +10,7 @@
     "prod": "vite build"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.6",
     "d3-dsv": "^3.0.1",
     "vue": "^3.2.41"
   },
