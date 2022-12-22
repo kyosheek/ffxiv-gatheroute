@@ -1,141 +1,134 @@
-<script>
-export default {
-    name: 'Stepper',
-    emits: [ 'setNextLoc', 'setPrevLoc' ],
-    props: {
+<script setup>
 
-        route: {
+import { computed } from "vue";
 
-            type: Object,
-            default() { return {}; }
-        },
-        region: {
+defineEmits([ 'setNextLoc', 'setPrevLoc' ]);
 
-            type: String,
-            default: null
-        },
-        location: {
+const props = defineProps({
 
-            type: String,
-            default: null
-        },
-        canSetNextLoc: {
+    route: {
 
-            type: Boolean,
-            default: false,
-        },
-        canSetPrevLoc: {
-
-            type: Boolean,
-            default: false,
-        },
+        type: Object,
+        default() { return {}; }
     },
-    data()
+    region: {
+
+        type: String,
+        default: null
+    },
+    location: {
+
+        type: String,
+        default: null
+    },
+    canSetNextLoc: {
+
+        type: Boolean,
+        default: false,
+    },
+    canSetPrevLoc: {
+
+        type: Boolean,
+        default: false,
+    }
+});
+
+const items = computed(() => {
+
+    if (JSON.stringify(props.route) === '{}')
     {
-        return {
-            err: null,
-        };
-    },
-    computed: {
+        return [];
+    }
 
-        items()
+    return props.route[props.region][props.location].map(item => {
+
+        let action;
+
+        if (item.aetheryte)
         {
-            if (JSON.stringify(this.route) === '{}')
+            action = `TP to ${item.name}`;
+        }
+        else
+        {
+            switch(item.profession)
             {
-                return [];
-            }
-
-            return this.route[this.region][this.location].map(item => {
-
-                let action;
-
-                if (item.aetheryte)
-                {
-                    action = `TP to ${item.name}`;
-                }
-                else
-                {
-                    switch(item.profession)
+                case 'hunting':
+                    action = `[DoW/DoM] Kill lv${item.lv} ${item.npc} for`;
+                    break;
+                case 'mining':
+                    action = `[Miner] Mine lv${item.lv} nodes for`;
+                    break;
+                case 'quarrying':
+                    action = `[Miner] Quarry lv${item.lv} nodes for`;
+                    break;
+                case 'logging':
+                    action = `[Botanist] Log lv${item.lv} nodes for`;
+                    break;
+                case 'harvesting':
+                    action = `[Botanist] Harvest lv${item.lv} nodes for`;
+                    break;
+                case 'fishing':
+                    action = `[Fisher] Fish for ${item.quantity} lv${item.lv} ${item.name} fish at (${item.x}, ${item.y}) with ${item.bait} bait`;
+                    break;
+                case 'buying':
+                    action = `[Any] Buy ${item.quantity} ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
+                    break;
+                case 'other':
+                    switch (item.region)
                     {
-                        case 'hunting':
-                            action = `[DoW/DoM] Kill lv${item.lv} ${item.npc} for`;
+                        case 'Dungeon':
+                            action = `Run ${item.location} for ${item.quantity} ${item.name}`;
                             break;
-                        case 'mining':
-                            action = `[Miner] Mine lv${item.lv} nodes for`;
+                        case 'Voyage':
+                            action = `Complete ${item.location} for ${item.quantity} ${item.name}`;
                             break;
-                        case 'quarrying':
-                            action = `[Miner] Quarry lv${item.lv} nodes for`;
-                            break;
-                        case 'logging':
-                            action = `[Botanist] Log lv${item.lv} nodes for`;
-                            break;
-                        case 'harvesting':
-                            action = `[Botanist] Harvest lv${item.lv} nodes for`;
-                            break;
-                        case 'fishing':
-                            action = `[Fisher] Fish for ${item.quantity} lv${item.lv} ${item.name} fish at (${item.x}, ${item.y}) with ${item.bait} bait`;
-                            break;
-                        case 'buying':
-                            action = `[Any] Buy ${item.quantity} ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
-                            break;
-                        case 'other':
-                            switch (item.region)
-                            {
-                                case 'Dungeon':
-                                    action = `Run ${item.location} for ${item.quantity} ${item.name}`;
-                                    break;
-                                case 'Voyage':
-                                    action = `Complete ${item.location} for ${item.quantity} ${item.name}`;
-                                    break;
-                                case 'Treasure Map':
-                                    action = `Obtain ${item.quantity} ${item.name} from following treasure maps:`;
-                                    break;
-                                default:
-                                    action = `No switch case for region (${item.region}). Please report a bug`;
-                                    break;
-                            }
+                        case 'Treasure Map':
+                            action = `Obtain ${item.quantity} ${item.name} from following treasure maps:`;
                             break;
                         default:
-                            action = 'No switch case for profession / Please report a bug';
+                            action = `No switch case for region (${item.region}). Please report a bug`;
                             break;
                     }
+                    break;
+                default:
+                    action = 'No switch case for profession / Please report a bug';
+                    break;
+            }
 
-                    if (item.profession !== 'buying' && item.profession !== 'fishing' && item.profession !== 'other')
-                    {
-                        action += ` ${item.quantity} ${item.name} at (${item.x}, ${item.y})`;
-                        const time = item.time;
-                        if (time.length > 0)
-                        {
-                            action += ` at ${time} (Eorzea time)`;
-                        }
-                    }
-
-                    if (item.profession === 'fishing')
-                    {
-                        const weather = item.weather,
-                            time = item.time,
-                            special = item.special;
-                        if (weather.length > 0)
-                        {
-                            action += ` in ${weather} weather`;
-                        }
-                        if (time.length > 0)
-                        {
-                            action += ` at ${time} (Eorzea time)`;
-                        }
-                        if (special.length > 0)
-                        {
-                            action += ` (with ${special} condition)`
-                        }
-                    }
+            if (item.profession !== 'buying' && item.profession !== 'fishing' && item.profession !== 'other')
+            {
+                action += ` ${item.quantity} ${item.name} at (${item.x}, ${item.y})`;
+                const time = item.time;
+                if (time.length > 0)
+                {
+                    action += ` at ${time} (Eorzea time)`;
                 }
+            }
 
-                item.action = action;
-                return item;
-            });
+            if (item.profession === 'fishing')
+            {
+                const weather = item.weather,
+                    time = item.time,
+                    special = item.special;
+                if (weather.length > 0)
+                {
+                    action += ` in ${weather} weather`;
+                }
+                if (time.length > 0)
+                {
+                    action += ` at ${time} (Eorzea time)`;
+                }
+                if (special.length > 0)
+                {
+                    action += ` (with ${special} condition)`
+                }
+            }
         }
-    }
-}
+
+        item.action = action;
+        return item;
+    });
+});
 </script>
 
 <template>
