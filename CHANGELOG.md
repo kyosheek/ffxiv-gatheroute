@@ -1,5 +1,10 @@
 # Changelog
 
+## Dec 23, 2022
+### QoL improvement
+
+- App now stores gather list in localStorage so it will persist trough multiple sessions.
+
 ## Dec 8, 2022
 
 - Updated materials table with all materials needed to craft items up to (excluding) ARR star recipes. 
