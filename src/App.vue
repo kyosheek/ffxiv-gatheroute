@@ -9,6 +9,7 @@
     import Materials from "./pages/Materials.vue";
 
     const componentsNamesMap = {
+
         'materials': Materials
     };
 

@@ -41,6 +41,7 @@ const materialsToGather = computed(() => {
 
         item.quantity = props.toGather[item.name];
     });
+
     return items;
 });
 

@@ -1,5 +1,5 @@
 <script setup>
-import { onBeforeMount, ref } from "vue";
+import { onBeforeMount, ref, watch } from "vue";
 
 import { tsvParse } from "d3-dsv";
 
@@ -9,6 +9,12 @@ import Selector from "../components/common/Selector.vue";
 let materials = ref([]);
 let aetherytes = ref([]);
 const toGather = ref({});
+
+const lastToGatherList = localStorage.getItem('last_to_gather_list');
+if (lastToGatherList != null) {
+
+    toGather.value = JSON.parse(lastToGatherList);
+}
 
 let err = ref(null);
 let isLoading = ref(true);
@@ -38,9 +44,13 @@ onBeforeMount(() => {
         .finally(() => isLoading.value = false);
 });
 
+watch(toGather.value, () => rememberToGatherList());
+
 const removeItemFromToGatherList = (name) => delete toGather.value[name];
 // for plain object
 const clearToGatherList = () => { for (let name in toGather.value) { delete toGather.value[name]; }};
+
+const rememberToGatherList = () => localStorage.setItem('last_to_gather_list', JSON.stringify(toGather.value));
 </script>
 
 <template>
