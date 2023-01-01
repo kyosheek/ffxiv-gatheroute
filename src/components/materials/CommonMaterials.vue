@@ -73,53 +73,36 @@ const items = computed(() => {
                 case 'buying':
                     action = `[Any] Buy ${item.quantity} ${item.name} from ${item.npc} at (${item.x}, ${item.y})`;
                     break;
-                case 'other':
-                    switch (item.region)
-                    {
-                        case 'Dungeon':
-                            action = `Run ${item.location} for ${item.quantity} ${item.name}`;
-                            break;
-                        case 'Voyage':
-                            action = `Complete ${item.location} for ${item.quantity} ${item.name}`;
-                            break;
-                        case 'Treasure Map':
-                            action = `Obtain ${item.quantity} ${item.name} from following treasure maps:`;
-                            break;
-                        default:
-                            action = `No switch case for region (${item.region}). Please report a bug`;
-                            break;
-                    }
-                    break;
                 default:
-                    action = 'No switch case for profession / Please report a bug';
+                    action = `No switch case for profession ${item.profession}. Please report a bug at https://github.com/kyosheek/ffxiv-gatheroute/issues/new`;
                     break;
             }
 
-            if (item.profession !== 'buying' && item.profession !== 'fishing' && item.profession !== 'other')
-            {
+            if (![ 'buying', 'fishing' ].includes(item.profession)) {
+
                 action += ` ${item.quantity} ${item.name} at (${item.x}, ${item.y})`;
                 const time = item.time;
-                if (time.length > 0)
-                {
+
+                if (time.length > 0) {
                     action += ` at ${time} (Eorzea time)`;
                 }
             }
 
-            if (item.profession === 'fishing')
-            {
+            if (item.profession === 'fishing') {
+
                 const weather = item.weather,
                     time = item.time,
                     special = item.special;
-                if (weather.length > 0)
-                {
+
+                if (weather.length > 0) {
                     action += ` in ${weather} weather`;
                 }
-                if (time.length > 0)
-                {
+
+                if (time.length > 0) {
                     action += ` at ${time} (Eorzea time)`;
                 }
-                if (special.length > 0)
-                {
+
+                if (special.length > 0) {
                     action += ` (with ${special} condition)`
                 }
             }

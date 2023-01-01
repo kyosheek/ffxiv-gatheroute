@@ -1,8 +1,9 @@
 <script setup>
 import { ref, computed } from "vue";
 
-import Stepper from "../materials/Stepper.vue";
 import Map from "../materials/Map.vue";
+import OtherMaterials from "../materials/OtherMaterials.vue";
+import CommonMaterials from "../materials/CommonMaterials.vue";
 
 const props = defineProps({
 
@@ -27,6 +28,8 @@ const route = ref({});
 const currentRegionIndex = ref(null);
 const currentLocationIndex = ref(null);
 
+const shownTab = ref('materials');
+
 const filteredItems = computed(() => {
 
     const items = Object.keys(props.toGather);
@@ -35,7 +38,7 @@ const filteredItems = computed(() => {
 
 const materialsToGather = computed(() => {
 
-    const items = filteredItems.value.filter(item => item.time.length === 0);
+    const items = filteredItems.value.filter(item => item.profession !== 'other' && item.time.length === 0);
 
     items.forEach(item => {
 
@@ -47,13 +50,23 @@ const materialsToGather = computed(() => {
 
 const timeRestrictedMaterialsToGather = computed(() => {
 
-    const items = filteredItems.value.filter(item => item.time.length > 0);
+    const items = filteredItems.value.filter(item => item.profession !== 'other' && item.time.length > 0);
     items.forEach(item => {
 
         item.quantity = props.toGather[item.name];
     });
     items.sort((a, b) => a.time.localeCompare(b.time));
 
+    return items;
+});
+
+const otherMaterialsToGather = computed(() => {
+
+    const items = filteredItems.value.filter(item => item.profession === 'other');
+    items.forEach(item => {
+
+        item.quantity = props.toGather[item.name];
+    });
     return items;
 });
 
@@ -304,9 +317,20 @@ const setPrevLoc = () => {
 
 <template>
     <article>
-        <h2>Route</h2>
+        <div class="tabs-headings">
+            <h2 class="tab-heading"
+                :class="{ 'tab-heading_active': shownTab === 'materials' }"
+                @click="shownTab = 'materials'">Route</h2>
+            <h2 class="tab-heading"
+                :class="{ 'tab-heading_active': shownTab === 'timeRestrictedMaterials' }"
+                @click="shownTab = 'timeRestrictedMaterials'">Time Restricted Materials</h2>
+            <h2 class="tab-heading"
+                :class="{ 'tab-heading_active': shownTab === 'otherMaterials' }"
+                @click="shownTab = 'otherMaterials'">Other Materials</h2>
+        </div>
 
-        <section>
+        <section v-if="shownTab === 'materials'">
+
             <button :disabled="!hasItemsToGather"
                     @click="initRouting">
                 Get Route
@@ -314,13 +338,13 @@ const setPrevLoc = () => {
 
             <section>
 
-                <Stepper :route="route"
-                         :region="routeRegions[currentRegionIndex]"
-                         :location="currentRegionLocations[currentLocationIndex]"
-                         :can-set-next-loc="canSetNextLoc"
-                         :can-set-prev-loc="canSetPrevLoc"
-                         @set-prev-loc="setPrevLoc"
-                         @set-next-loc="setNextLoc"/>
+                <CommonMaterials :route="route"
+                                 :region="routeRegions[currentRegionIndex]"
+                                 :location="currentRegionLocations[currentLocationIndex]"
+                                 :can-set-next-loc="canSetNextLoc"
+                                 :can-set-prev-loc="canSetPrevLoc"
+                                 @set-prev-loc="setPrevLoc"
+                                 @set-next-loc="setNextLoc"/>
 
                 <Map :route="route"
                      :region="routeRegions[currentRegionIndex]"
@@ -329,32 +353,69 @@ const setPrevLoc = () => {
             </section>
         </section>
 
-    </article>
+        <section v-if="shownTab === 'timeRestrictedMaterials'"
+                 class="stepper__items">
+            <template v-for="item in timeRestrictedMaterialsToGather">
+                <article class="item">
+                    <p>
+                        x{{ item.quantity }} <b>{{ item.name }}</b> ({{ item.profession }})
+                        <br/>
+                        <i>{{ item.region }}, {{ item.location }}</i>
+                        <br/>
+                        <br/>
+                        <b>{{ item.time }}</b> Eorzea Time
+                    </p>
+                </article>
+            </template>
+        </section>
 
-    <div class="materials-delimiter"></div>
+        <template v-if="shownTab === 'otherMaterials'">
 
-    <article>
+            <OtherMaterials :materials="otherMaterialsToGather"/>
 
-        <h2>Time Restricted Materials</h2>
-
-            <section class="stepper__items">
-                <template v-for="item in timeRestrictedMaterialsToGather">
-                    <article class="item">
-                        <p>
-                            x{{ item.quantity }} <b>{{ item.name }}</b> ({{ item.profession }})
-                            <br/>
-                            <i>{{ item.region }}, {{ item.location }}</i>
-                            <br/>
-                            <br/>
-                            <b>{{ item.time }}</b> Eorzea Time
-                        </p>
-                    </article>
-                </template>
-            </section>
+        </template>
 
     </article>
 </template>
 
 <style lang="scss">
+
+.tabs {
+    &-headings {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 4px solid var(--c-3);
+    }
+}
+
+.tab-heading {
+
+    cursor: pointer;
+    padding: 0.83em 1em;
+    margin-block-start: unset;
+    margin-block-end: unset;
+
+    &_active {
+
+        position: relative;
+        cursor: default;
+        pointer-events: none;
+
+        &::before {
+            display: block;
+            content: "";
+
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+
+            height: 4px;
+            background: var(--c-8);
+        }
+    }
+}
 
 </style>
