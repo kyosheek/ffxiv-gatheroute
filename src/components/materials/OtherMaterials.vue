@@ -36,10 +36,10 @@ const items = computed(() => {
                 action = `Get ${item.location} quest from ${item.npc}`;
                 break;
             case 'Raid':
-                action = `Complete ${item.lv}lv ${item.region} raid`;
+                action = `Complete ${item.lv}lv ${item.location} raid`;
                 break;
             case 'Trial':
-                action = `Complete ${item.lv}lv ${item.region} trial`;
+                action = `Complete ${item.lv}lv ${item.location} trial`;
                 break;
             case 'Retainer':
                 action = `Send retainer to ${item.location} ventures`
@@ -61,7 +61,7 @@ const items = computed(() => {
 <template>
 
     <section class="stepper__items stepper__items_other">
-        <template v-for="(item, idx) in items">
+        <template v-for="(item) in items">
             <article class="item">
                 <p>
                     <b>x{{ item.quantity }} {{ item.name }}</b>
