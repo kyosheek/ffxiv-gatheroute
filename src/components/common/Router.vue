@@ -320,13 +320,13 @@ const setPrevLoc = () => {
         <div class="tabs-headings">
             <h2 class="tab-heading"
                 :class="{ 'tab-heading_active': shownTab === 'materials' }"
-                @click="shownTab = 'materials'">Route</h2>
+                @click="shownTab = 'materials'">Route ({{ materialsToGather.length }})</h2>
             <h2 class="tab-heading"
                 :class="{ 'tab-heading_active': shownTab === 'timeRestrictedMaterials' }"
-                @click="shownTab = 'timeRestrictedMaterials'">Time Restricted Materials</h2>
+                @click="shownTab = 'timeRestrictedMaterials'">Time Restricted Materials ({{ timeRestrictedMaterialsToGather.length }})</h2>
             <h2 class="tab-heading"
                 :class="{ 'tab-heading_active': shownTab === 'otherMaterials' }"
-                @click="shownTab = 'otherMaterials'">Other Materials</h2>
+                @click="shownTab = 'otherMaterials'">Other Materials ({{ otherMaterialsToGather.length }})</h2>
         </div>
 
         <section v-if="shownTab === 'materials'">
@@ -387,6 +387,8 @@ const setPrevLoc = () => {
         justify-content: space-between;
 
         border-bottom: 4px solid var(--c-3);
+
+        overflow-x: scroll;
     }
 }
 
