@@ -388,6 +388,8 @@ const setPrevLoc = () => {
 
         border-bottom: 4px solid var(--c-3);
 
+        white-space: nowrap;
+
         overflow-x: scroll;
     }
 }
