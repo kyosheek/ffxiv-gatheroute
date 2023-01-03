@@ -407,6 +407,8 @@ const setPrevLoc = () => {
         cursor: default;
         pointer-events: none;
 
+        color: var(--c-4);
+
         &::before {
             display: block;
             content: "";
@@ -414,9 +416,10 @@ const setPrevLoc = () => {
             position: absolute;
             bottom: -4px;
             left: 0;
-            width: 100%;
 
+            width: 100%;
             height: 4px;
+
             background: var(--c-8);
         }
     }
