@@ -1,5 +1,14 @@
 # Changelog
 
+## Jan 1, 2023
+- Happy New Year!
+
+### QoL improvement
+- Materials are now separated into different tabs:
+  - __Route__ – materials that you can gather from hunting and with DoL classes
+  - __Time Restricted Materials__ – materials that you can gather with DoL classes but with limited time, hence they are excluded from Route
+  - __Other Materials__ – materials that you can gather via different activities e.g. looting chests in dungeons, getting drops from trials, etc.
+
 ## Dec 23, 2022
 ### QoL improvement
 
