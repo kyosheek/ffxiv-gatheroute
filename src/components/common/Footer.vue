@@ -16,7 +16,7 @@
             <ul class="ul_inline">
                 <li><a href="https://discordapp.com/users/190847929433587712"
                        target="_blank">Discord</a></li>
-                <li><a href="http://kyoshee.xyz"
+                <li><a href="https://kyoshee.com"
                        target="_blank">Personal Website</a></li>
             </ul>
         </article>
